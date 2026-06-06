@@ -1,0 +1,51 @@
+sector,ticker,years_ok
+Consumer Discretionary,AMZN,9
+Consumer Discretionary,F,9
+Consumer Discretionary,HD,9
+Consumer Discretionary,LOW,9
+Consumer Discretionary,MCD,8
+Consumer Discretionary,NKE,9
+Consumer Discretionary,SBUX,8
+Consumer Discretionary,TGT,9
+Consumer Discretionary,TJX,9
+Consumer Discretionary,TSLA,9
+Energy,COP,9
+Energy,CVX,9
+Energy,EOG,9
+Energy,HAL,9
+Energy,MPC,9
+Energy,OXY,9
+Energy,PSX,9
+Energy,SLB,9
+Energy,VLO,9
+Energy,XOM,8
+Financials,AXP,9
+Financials,BAC,9
+Financials,BLK,9
+Financials,BRK.B,9
+Financials,C,9
+Financials,GS,9
+Financials,JPM,9
+Financials,MS,9
+Financials,SCHW,9
+Financials,WFC,9
+Healthcare,ABBV,9
+Healthcare,ABT,9
+Healthcare,BMY,9
+Healthcare,JNJ,9
+Healthcare,LLY,9
+Healthcare,MDT,9
+Healthcare,MRK,9
+Healthcare,PFE,9
+Healthcare,TMO,9
+Healthcare,UNH,9
+Technology,AAPL,8
+Technology,AVGO,6
+Technology,CRM,9
+Technology,GOOGL,9
+Technology,IBM,9
+Technology,INTC,9
+Technology,META,9
+Technology,MSFT,9
+Technology,NVDA,8
+Technology,ORCL,9

@@ -1,0 +1,51 @@
+ticker,sector,years_total,years_usable,source_url,gap_years
+MSFT,Technology,9,9,microsoft.com/en-us/about,
+AAPL,Technology,9,2,apple.com/about,2018;2019;2020;2021;2022;2023;2024
+NVDA,Technology,9,8,nvidia.com/en-us/about-nvidia,2017
+GOOGL,Technology,9,9,abc.xyz,
+META,Technology,9,4,facebook.com/company,2020;2021;2022;2023;2024
+AVGO,Technology,9,2,broadcom.com/company/about-us,2016;2019;2020;2021;2022;2023;2024
+CRM,Technology,9,5,salesforce.com/company/about-us,2016;2022;2023;2024
+ORCL,Technology,9,7,oracle.com/corporate,2016;2017
+IBM,Technology,9,5,ibm.com/about,2016;2017;2018;2019
+INTC,Technology,9,9,intel.com/content/www/us/en/company-overview/company-overview.html,
+BRK.B,Financials,9,9,berkshirehathaway.com,
+JPM,Financials,9,9,jpmorganchase.com,
+BAC,Financials,9,9,bankofamerica.com,
+WFC,Financials,9,9,wellsfargo.com/about,
+GS,Financials,9,9,goldmansachs.com/what-we-do,
+MS,Financials,9,9,morganstanley.com/about-us,
+BLK,Financials,9,9,blackrock.com/corporate,
+SCHW,Financials,9,9,aboutschwab.com,
+AXP,Financials,9,2,americanexpress.com/en-us/company,2016;2017;2018;2019;2020;2021;2022
+C,Financials,9,6,citigroup.com/citi/about,2016;2023;2024
+LLY,Healthcare,9,5,lilly.com/who-we-are,2021;2022;2023;2024
+UNH,Healthcare,9,2,unitedhealthgroup.com/about,2016;2017;2020;2021;2022;2023;2024
+JNJ,Healthcare,9,8,jnj.com/about-jnj,2024
+ABBV,Healthcare,9,7,abbvie.com/our-company.html,2016;2024
+MRK,Healthcare,9,5,merck.com/about,2021;2022;2023;2024
+TMO,Healthcare,9,2,thermofisher.com/us/en/home.html,2018;2019;2020;2021;2022;2023;2024
+ABT,Healthcare,9,9,abbott.com/about-abbott/who-we-are.html,
+PFE,Healthcare,9,6,pfizer.com/about,2018;2019;2020
+MDT,Healthcare,9,6,medtronic.com/us-en/about.html,2022;2023;2024
+BMY,Healthcare,9,8,bms.com/about-us/our-company.html,2016
+AMZN,Consumer Discretionary,9,7,aboutamazon.com,2016;2017
+TSLA,Consumer Discretionary,9,9,tesla.com/about,
+HD,Consumer Discretionary,9,9,corporate.homedepot.com,
+MCD,Consumer Discretionary,9,9,mcdonalds.com/us/en-us/about-us.html,
+NKE,Consumer Discretionary,9,7,about.nike.com,2023;2024
+SBUX,Consumer Discretionary,9,9,starbucks.com/about-us,
+TGT,Consumer Discretionary,9,2,corporate.target.com/about/purpose-values,2016;2017;2020;2021;2022;2023;2024
+LOW,Consumer Discretionary,9,5,corporate.lowes.com,2016;2017;2018;2019
+TJX,Consumer Discretionary,9,7,tjx.com/company,2016;2024
+F,Consumer Discretionary,9,6,ford.com,2022;2023;2024
+XOM,Energy,9,9,corporate.exxonmobil.com,
+CVX,Energy,9,8,chevron.com/about,2024
+COP,Energy,9,8,conocophillips.com/about-us,2016
+EOG,Energy,9,7,eogresources.com/company,2016;2017
+SLB,Energy,9,4,slb.com/who-we-are,2016;2017;2018;2023;2024
+MPC,Energy,9,6,marathonpetroleum.com/about,2016;2017;2018
+PSX,Energy,9,6,phillips66.com/about,2016;2023;2024
+VLO,Energy,9,5,valero.com/about,2016;2017;2018;2019
+OXY,Energy,9,4,oxy.com/about,2016;2017;2018;2019;2020
+HAL,Energy,9,3,halliburton.com/en-US/about-us/corporate-profile/default.page,2019;2020;2021;2022;2023;2024

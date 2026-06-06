@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Python environment / caches
+.venv/
+__pycache__/
+*.py[cod]
+
+# Large fetched-content caches (regenerated on demand; do NOT commit).
+# Output datasets (the .csv / .parquet deliverables) ARE committed.
+data/part1/_html_cache/
+data/part2/_edgar_cache/
+data/part2/_llm_cache/
+data/part1/_llm_cache/
+
+# OS noise
+.DS_Store
