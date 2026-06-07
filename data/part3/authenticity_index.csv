@@ -1,0 +1,376 @@
+ticker,company_name,sector,year,match_type,stated_year_used,stated_lag_years,align_cosine_raw,align_cosine_centered,authenticity_score,top_say,top_do,largest_overclaim,overclaim_gap,largest_underclaim,underclaim_gap
+AMZN,Amazon,Consumer Discretionary,2018,same_year,2018,0,0.4711,-0.3778,31.1,innovation_technology,financial_growth_shareholder,sustainability_environment,0.1383,financial_growth_shareholder,-0.3598
+AMZN,Amazon,Consumer Discretionary,2019,same_year,2019,0,0.6372,0.4045,70.2,innovation_technology,financial_growth_shareholder,community_social_impact,0.1339,financial_growth_shareholder,-0.2591
+AMZN,Amazon,Consumer Discretionary,2020,same_year,2020,0,0.8737,0.19,59.5,innovation_technology,financial_growth_shareholder,customer_focus,0.0981,integrity_ethics,-0.0809
+AMZN,Amazon,Consumer Discretionary,2021,same_year,2021,0,0.6482,0.617,80.8,innovation_technology,diversity_inclusion,community_social_impact,0.1274,diversity_inclusion,-0.1979
+AMZN,Amazon,Consumer Discretionary,2022,carried_forward,2021,1,0.6527,0.6385,81.9,innovation_technology,people_talent,customer_focus,0.1491,diversity_inclusion,-0.1769
+AMZN,Amazon,Consumer Discretionary,2023,carried_forward,2021,2,0.6352,0.6065,80.3,innovation_technology,financial_growth_shareholder,community_social_impact,0.1525,financial_growth_shareholder,-0.1684
+AMZN,Amazon,Consumer Discretionary,2024,same_year,2024,0,0.7102,0.1615,58.1,innovation_technology,innovation_technology,innovation_technology,0.1947,financial_growth_shareholder,-0.1506
+F,Ford Motor,Consumer Discretionary,2016,same_year,2016,0,0.3682,0.2769,63.8,innovation_technology,financial_growth_shareholder,innovation_technology,0.4089,financial_growth_shareholder,-0.3041
+F,Ford Motor,Consumer Discretionary,2017,same_year,2017,0,0.2961,0.0018,50.1,customer_focus,financial_growth_shareholder,customer_focus,0.6015,financial_growth_shareholder,-0.2648
+F,Ford Motor,Consumer Discretionary,2018,same_year,2018,0,0.0588,-0.1187,44.1,customer_focus,financial_growth_shareholder,customer_focus,0.9772,financial_growth_shareholder,-0.25
+F,Ford Motor,Consumer Discretionary,2019,same_year,2019,0,0.3172,0.0898,54.5,customer_focus,financial_growth_shareholder,customer_focus,0.552,financial_growth_shareholder,-0.2787
+F,Ford Motor,Consumer Discretionary,2020,same_year,2020,0,0.2708,-0.1835,40.8,customer_focus,financial_growth_shareholder,customer_focus,0.3905,financial_growth_shareholder,-0.2054
+F,Ford Motor,Consumer Discretionary,2021,same_year,2021,0,0.3748,0.2916,64.6,innovation_technology,financial_growth_shareholder,innovation_technology,0.2586,financial_growth_shareholder,-0.1896
+F,Ford Motor,Consumer Discretionary,2022,carried_forward,2021,1,0.3372,0.1953,59.8,innovation_technology,financial_growth_shareholder,community_social_impact,0.2682,financial_growth_shareholder,-0.2181
+F,Ford Motor,Consumer Discretionary,2023,carried_forward,2021,2,0.3022,-0.2069,39.7,innovation_technology,people_talent,community_social_impact,0.2742,people_talent,-0.2115
+F,Ford Motor,Consumer Discretionary,2024,carried_forward,2021,3,0.3382,-0.2494,37.5,innovation_technology,financial_growth_shareholder,community_social_impact,0.2724,financial_growth_shareholder,-0.207
+HD,Home Depot,Consumer Discretionary,2016,same_year,2016,0,0.1277,-0.3013,34.9,community_social_impact,financial_growth_shareholder,community_social_impact,0.5791,financial_growth_shareholder,-0.3438
+HD,Home Depot,Consumer Discretionary,2017,same_year,2017,0,0.1274,-0.4679,26.6,people_talent,financial_growth_shareholder,sustainability_environment,0.3242,financial_growth_shareholder,-0.3371
+HD,Home Depot,Consumer Discretionary,2018,same_year,2018,0,0.042,-0.1293,43.5,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.5916,financial_growth_shareholder,-0.3309
+HD,Home Depot,Consumer Discretionary,2019,same_year,2019,0,0.1628,-0.2961,35.2,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.3653,financial_growth_shareholder,-0.3116
+HD,Home Depot,Consumer Discretionary,2020,same_year,2020,0,0.4426,-0.0498,47.5,people_talent,financial_growth_shareholder,community_social_impact,0.3157,financial_growth_shareholder,-0.3258
+HD,Home Depot,Consumer Discretionary,2021,same_year,2021,0,0.1911,-0.0952,45.2,community_social_impact,financial_growth_shareholder,community_social_impact,0.438,financial_growth_shareholder,-0.3299
+HD,Home Depot,Consumer Discretionary,2022,same_year,2022,0,0.4604,0.1427,57.1,community_social_impact,financial_growth_shareholder,community_social_impact,0.262,financial_growth_shareholder,-0.294
+HD,Home Depot,Consumer Discretionary,2023,same_year,2023,0,0.298,-0.143,42.8,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.3655,financial_growth_shareholder,-0.3169
+HD,Home Depot,Consumer Discretionary,2024,same_year,2024,0,0.6746,0.6803,84.0,community_social_impact,financial_growth_shareholder,community_social_impact,0.3554,integrity_ethics,-0.1416
+LOW,Lowe's,Consumer Discretionary,2020,same_year,2020,0,0.5695,0.5143,75.7,community_social_impact,financial_growth_shareholder,community_social_impact,0.4774,people_talent,-0.2247
+LOW,Lowe's,Consumer Discretionary,2021,same_year,2021,0,0.5636,0.5616,78.1,community_social_impact,financial_growth_shareholder,community_social_impact,0.468,people_talent,-0.1678
+LOW,Lowe's,Consumer Discretionary,2022,same_year,2022,0,0.5096,0.5822,79.1,community_social_impact,financial_growth_shareholder,community_social_impact,0.4756,people_talent,-0.1905
+LOW,Lowe's,Consumer Discretionary,2023,same_year,2023,0,0.5579,0.6605,83.0,community_social_impact,financial_growth_shareholder,community_social_impact,0.4807,diversity_inclusion,-0.1319
+LOW,Lowe's,Consumer Discretionary,2024,same_year,2024,0,0.5435,0.6385,81.9,community_social_impact,financial_growth_shareholder,community_social_impact,0.4715,people_talent,-0.1427
+MCD,McDonald's,Consumer Discretionary,2016,same_year,2016,0,0.105,0.0578,52.9,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5643,financial_growth_shareholder,-0.465
+MCD,McDonald's,Consumer Discretionary,2017,same_year,2017,0,0.1528,0.1624,58.1,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5525,financial_growth_shareholder,-0.3998
+MCD,McDonald's,Consumer Discretionary,2018,same_year,2018,0,0.1834,0.1777,58.9,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5493,financial_growth_shareholder,-0.3573
+MCD,McDonald's,Consumer Discretionary,2019,same_year,2019,0,0.1965,0.2077,60.4,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5268,financial_growth_shareholder,-0.35
+MCD,McDonald's,Consumer Discretionary,2020,same_year,2020,0,0.1969,0.1778,58.9,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5308,financial_growth_shareholder,-0.3323
+MCD,McDonald's,Consumer Discretionary,2021,same_year,2021,0,0.229,0.2794,64.0,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5281,financial_growth_shareholder,-0.3225
+MCD,McDonald's,Consumer Discretionary,2023,same_year,2023,0,0.3618,0.6919,84.6,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5426,financial_growth_shareholder,-0.2284
+MCD,McDonald's,Consumer Discretionary,2024,same_year,2024,0,0.366,0.5901,79.5,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.5429,financial_growth_shareholder,-0.2559
+NKE,Nike,Consumer Discretionary,2016,same_year,2016,0,0.1089,-0.3703,31.5,innovation_technology,financial_growth_shareholder,innovation_technology,0.5094,financial_growth_shareholder,-0.3057
+NKE,Nike,Consumer Discretionary,2017,same_year,2017,0,0.093,-0.198,40.1,innovation_technology,financial_growth_shareholder,innovation_technology,0.5115,financial_growth_shareholder,-0.3856
+NKE,Nike,Consumer Discretionary,2018,same_year,2018,0,0.635,0.1211,56.1,innovation_technology,financial_growth_shareholder,innovation_technology,0.1957,integrity_ethics,-0.1628
+NKE,Nike,Consumer Discretionary,2019,same_year,2019,0,0.4788,-0.479,26.1,innovation_technology,financial_growth_shareholder,innovation_technology,0.2243,financial_growth_shareholder,-0.2176
+NKE,Nike,Consumer Discretionary,2020,same_year,2020,0,0.5414,-0.5593,22.0,innovation_technology,financial_growth_shareholder,innovation_technology,0.1561,financial_growth_shareholder,-0.2876
+NKE,Nike,Consumer Discretionary,2021,same_year,2021,0,0.6953,0.519,76.0,innovation_technology,diversity_inclusion,innovation_technology,0.1241,financial_growth_shareholder,-0.1807
+NKE,Nike,Consumer Discretionary,2022,same_year,2022,0,0.6156,-0.4507,27.5,innovation_technology,people_talent,innovation_technology,0.144,financial_growth_shareholder,-0.2455
+NKE,Nike,Consumer Discretionary,2023,carried_forward,2022,1,0.6702,0.2938,64.7,innovation_technology,diversity_inclusion,innovation_technology,0.1459,financial_growth_shareholder,-0.2011
+NKE,Nike,Consumer Discretionary,2024,carried_forward,2022,2,0.6301,-0.0096,49.5,innovation_technology,financial_growth_shareholder,innovation_technology,0.1454,financial_growth_shareholder,-0.2355
+SBUX,Starbucks,Consumer Discretionary,2016,same_year,2016,0,0.2315,-0.0665,46.7,customer_focus,financial_growth_shareholder,customer_focus,0.5988,financial_growth_shareholder,-0.3452
+SBUX,Starbucks,Consumer Discretionary,2017,same_year,2017,0,0.0817,-0.0858,45.7,customer_focus,financial_growth_shareholder,customer_focus,0.3876,financial_growth_shareholder,-0.3576
+SBUX,Starbucks,Consumer Discretionary,2018,same_year,2018,0,0.0976,-0.14,43.0,customer_focus,financial_growth_shareholder,quality_excellence,0.3128,financial_growth_shareholder,-0.2985
+SBUX,Starbucks,Consumer Discretionary,2019,same_year,2019,0,0.1536,0.078,53.9,customer_focus,financial_growth_shareholder,community_social_impact,0.3036,financial_growth_shareholder,-0.2656
+SBUX,Starbucks,Consumer Discretionary,2020,same_year,2020,0,0.2105,0.0738,53.7,customer_focus,financial_growth_shareholder,quality_excellence,0.3049,financial_growth_shareholder,-0.2026
+SBUX,Starbucks,Consumer Discretionary,2021,same_year,2021,0,0.2333,0.1678,58.4,customer_focus,diversity_inclusion,quality_excellence,0.3031,diversity_inclusion,-0.1826
+SBUX,Starbucks,Consumer Discretionary,2022,same_year,2022,0,0.4013,-0.0204,49.0,customer_focus,financial_growth_shareholder,customer_focus,0.2178,financial_growth_shareholder,-0.2119
+SBUX,Starbucks,Consumer Discretionary,2023,same_year,2023,0,0.367,-0.1726,41.4,customer_focus,financial_growth_shareholder,customer_focus,0.1823,financial_growth_shareholder,-0.2282
+TGT,Target,Consumer Discretionary,2018,same_year,2018,0,0.2875,0.0363,51.8,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.4294,financial_growth_shareholder,-0.3912
+TGT,Target,Consumer Discretionary,2019,same_year,2019,0,0.2445,-0.0572,47.1,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.4298,financial_growth_shareholder,-0.3904
+TGT,Target,Consumer Discretionary,2020,carried_forward,2019,1,0.2619,-0.0403,48.0,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.4316,financial_growth_shareholder,-0.3749
+TGT,Target,Consumer Discretionary,2021,carried_forward,2019,2,0.2471,-0.1532,42.3,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.4266,financial_growth_shareholder,-0.3701
+TGT,Target,Consumer Discretionary,2022,carried_forward,2019,3,0.3194,-0.0036,49.8,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.4197,financial_growth_shareholder,-0.3097
+TGT,Target,Consumer Discretionary,2023,carried_forward,2019,4,0.332,-0.0376,48.1,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.4247,financial_growth_shareholder,-0.2743
+TGT,Target,Consumer Discretionary,2024,carried_forward,2019,5,0.3115,0.0215,51.1,diversity_inclusion,financial_growth_shareholder,diversity_inclusion,0.4205,financial_growth_shareholder,-0.2607
+TJX,TJX Companies,Consumer Discretionary,2017,same_year,2017,0,0.5181,0.5573,77.9,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.2405,diversity_inclusion,-0.1711
+TJX,TJX Companies,Consumer Discretionary,2018,same_year,2018,0,0.484,0.5517,77.6,customer_focus,financial_growth_shareholder,customer_focus,0.2581,financial_growth_shareholder,-0.5742
+TJX,TJX Companies,Consumer Discretionary,2019,same_year,2019,0,0.5237,0.3903,69.5,global_scale_reach,financial_growth_shareholder,customer_focus,0.207,integrity_ethics,-0.2078
+TJX,TJX Companies,Consumer Discretionary,2020,same_year,2020,0,0.5375,0.537,76.8,customer_focus,financial_growth_shareholder,customer_focus,0.2233,integrity_ethics,-0.1733
+TJX,TJX Companies,Consumer Discretionary,2021,same_year,2021,0,0.6575,0.6682,83.4,customer_focus,financial_growth_shareholder,customer_focus,0.2227,integrity_ethics,-0.1681
+TJX,TJX Companies,Consumer Discretionary,2022,same_year,2022,0,0.6641,0.6668,83.3,customer_focus,financial_growth_shareholder,customer_focus,0.2033,integrity_ethics,-0.1619
+TJX,TJX Companies,Consumer Discretionary,2023,same_year,2023,0,0.6041,0.5383,76.9,customer_focus,financial_growth_shareholder,customer_focus,0.2705,integrity_ethics,-0.1713
+TJX,TJX Companies,Consumer Discretionary,2024,carried_forward,2023,1,0.6191,0.4945,74.7,customer_focus,financial_growth_shareholder,customer_focus,0.2636,integrity_ethics,-0.1975
+TSLA,Tesla,Consumer Discretionary,2016,same_year,2016,0,0.252,0.0064,50.3,innovation_technology,diversity_inclusion,sustainability_environment,0.3395,diversity_inclusion,-0.2874
+TSLA,Tesla,Consumer Discretionary,2017,same_year,2017,0,0.3094,-0.157,42.2,sustainability_environment,integrity_ethics,sustainability_environment,0.2556,integrity_ethics,-0.275
+TSLA,Tesla,Consumer Discretionary,2018,same_year,2018,0,0.321,0.0372,51.9,sustainability_environment,integrity_ethics,sustainability_environment,0.3338,integrity_ethics,-0.2599
+TSLA,Tesla,Consumer Discretionary,2019,same_year,2019,0,0.3118,-0.1071,44.6,sustainability_environment,diversity_inclusion,sustainability_environment,0.3284,diversity_inclusion,-0.255
+TSLA,Tesla,Consumer Discretionary,2020,same_year,2020,0,0.3262,-0.0445,47.8,innovation_technology,diversity_inclusion,sustainability_environment,0.3119,diversity_inclusion,-0.2272
+TSLA,Tesla,Consumer Discretionary,2021,same_year,2021,0,0.3055,-0.0913,45.4,innovation_technology,diversity_inclusion,sustainability_environment,0.304,diversity_inclusion,-0.2979
+TSLA,Tesla,Consumer Discretionary,2022,same_year,2022,0,0.4794,0.1491,57.5,innovation_technology,diversity_inclusion,innovation_technology,0.2715,diversity_inclusion,-0.2375
+TSLA,Tesla,Consumer Discretionary,2023,same_year,2023,0,0.3142,-0.0825,45.9,sustainability_environment,diversity_inclusion,sustainability_environment,0.3701,diversity_inclusion,-0.2912
+TSLA,Tesla,Consumer Discretionary,2024,same_year,2024,0,0.2347,-0.3744,31.3,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.3602,financial_growth_shareholder,-0.303
+COP,ConocoPhillips,Energy,2017,same_year,2017,0,0.4077,-0.3264,33.7,innovation_technology,people_talent,innovation_technology,0.2505,people_talent,-0.2586
+COP,ConocoPhillips,Energy,2018,same_year,2018,0,0.3435,-0.5218,23.9,innovation_technology,people_talent,innovation_technology,0.331,people_talent,-0.2617
+COP,ConocoPhillips,Energy,2019,same_year,2019,0,0.5606,-0.2109,39.5,innovation_technology,people_talent,innovation_technology,0.2312,integrity_ethics,-0.1663
+COP,ConocoPhillips,Energy,2020,same_year,2020,0,0.5083,-0.328,33.6,innovation_technology,people_talent,innovation_technology,0.1898,integrity_ethics,-0.1613
+COP,ConocoPhillips,Energy,2021,same_year,2021,0,0.297,-0.5228,23.9,innovation_technology,people_talent,innovation_technology,0.2453,people_talent,-0.2669
+COP,ConocoPhillips,Energy,2022,same_year,2022,0,0.6717,-0.1618,41.9,innovation_technology,sustainability_environment,innovation_technology,0.1684,people_talent,-0.1072
+COP,ConocoPhillips,Energy,2023,same_year,2023,0,0.7132,0.1148,55.7,innovation_technology,people_talent,innovation_technology,0.1478,diversity_inclusion,-0.1332
+COP,ConocoPhillips,Energy,2024,same_year,2024,0,0.4726,-0.1735,41.3,innovation_technology,people_talent,innovation_technology,0.2467,people_talent,-0.2429
+CVX,Chevron,Energy,2016,same_year,2016,0,0.9071,-0.1969,40.2,people_talent,people_talent,customer_focus,0.0666,global_scale_reach,-0.0788
+CVX,Chevron,Energy,2017,same_year,2017,0,0.8892,-0.2741,36.3,people_talent,sustainability_environment,customer_focus,0.0697,global_scale_reach,-0.0997
+CVX,Chevron,Energy,2018,same_year,2018,0,0.8814,-0.2157,39.2,people_talent,sustainability_environment,customer_focus,0.0698,global_scale_reach,-0.0998
+CVX,Chevron,Energy,2019,same_year,2019,0,0.6871,-0.4944,25.3,people_talent,sustainability_environment,quality_excellence,0.0811,sustainability_environment,-0.2149
+CVX,Chevron,Energy,2020,same_year,2020,0,0.7951,0.4433,72.2,people_talent,sustainability_environment,customer_focus,0.1487,financial_growth_shareholder,-0.091
+CVX,Chevron,Energy,2021,same_year,2021,0,0.7954,0.2435,62.2,people_talent,sustainability_environment,customer_focus,0.1484,global_scale_reach,-0.0941
+CVX,Chevron,Energy,2022,same_year,2022,0,0.7221,0.2262,61.3,customer_focus,sustainability_environment,customer_focus,0.1906,diversity_inclusion,-0.1049
+CVX,Chevron,Energy,2023,same_year,2023,0,0.8007,0.3427,67.1,integrity_ethics,sustainability_environment,quality_excellence,0.1837,diversity_inclusion,-0.1175
+CVX,Chevron,Energy,2024,carried_forward,2023,1,0.8223,0.3938,69.7,integrity_ethics,sustainability_environment,quality_excellence,0.1818,diversity_inclusion,-0.1092
+EOG,EOG Resources,Energy,2018,same_year,2018,0,0.2232,-0.4908,25.5,financial_growth_shareholder,people_talent,financial_growth_shareholder,0.8927,people_talent,-0.3964
+EOG,EOG Resources,Energy,2019,carried_forward,2018,1,0.1825,-0.6492,17.5,financial_growth_shareholder,people_talent,financial_growth_shareholder,0.9225,people_talent,-0.3101
+EOG,EOG Resources,Energy,2020,carried_forward,2018,2,0.1623,-0.6766,16.2,financial_growth_shareholder,people_talent,financial_growth_shareholder,0.9329,people_talent,-0.2862
+EOG,EOG Resources,Energy,2021,same_year,2021,0,0.3042,0.3689,68.4,sustainability_environment,people_talent,sustainability_environment,0.8733,people_talent,-0.292
+EOG,EOG Resources,Energy,2022,same_year,2022,0,0.3972,0.337,66.9,sustainability_environment,people_talent,sustainability_environment,0.8347,people_talent,-0.2826
+EOG,EOG Resources,Energy,2023,carried_forward,2022,1,0.3712,0.292,64.6,sustainability_environment,people_talent,sustainability_environment,0.8521,people_talent,-0.243
+EOG,EOG Resources,Energy,2024,carried_forward,2022,2,0.3062,0.1311,56.6,sustainability_environment,people_talent,sustainability_environment,0.8777,people_talent,-0.2693
+HAL,Halliburton,Energy,2016,same_year,2016,0,0.4063,0.0476,52.4,people_talent,integrity_ethics,global_scale_reach,0.4589,integrity_ethics,-0.2125
+HAL,Halliburton,Energy,2017,same_year,2017,0,0.4285,-0.1123,44.4,people_talent,integrity_ethics,global_scale_reach,0.3404,integrity_ethics,-0.1905
+HAL,Halliburton,Energy,2018,same_year,2018,0,0.4946,0.2217,61.1,people_talent,diversity_inclusion,people_talent,0.3805,diversity_inclusion,-0.167
+HAL,Halliburton,Energy,2019,carried_forward,2018,1,0.3017,-0.1578,42.1,people_talent,financial_growth_shareholder,global_scale_reach,0.4107,financial_growth_shareholder,-0.3847
+HAL,Halliburton,Energy,2020,carried_forward,2018,2,0.3214,-0.1659,41.7,people_talent,financial_growth_shareholder,people_talent,0.4077,financial_growth_shareholder,-0.3517
+HAL,Halliburton,Energy,2021,carried_forward,2018,3,0.3797,-0.0093,49.5,people_talent,financial_growth_shareholder,global_scale_reach,0.4159,financial_growth_shareholder,-0.3345
+HAL,Halliburton,Energy,2022,carried_forward,2018,4,0.3189,-0.2043,39.8,people_talent,financial_growth_shareholder,people_talent,0.4213,financial_growth_shareholder,-0.3181
+HAL,Halliburton,Energy,2023,carried_forward,2018,5,0.3597,-0.134,43.3,people_talent,financial_growth_shareholder,people_talent,0.4202,financial_growth_shareholder,-0.2726
+HAL,Halliburton,Energy,2024,carried_forward,2018,6,0.3907,-0.0338,48.3,people_talent,financial_growth_shareholder,people_talent,0.4105,financial_growth_shareholder,-0.2667
+MPC,Marathon Petroleum,Energy,2019,same_year,2019,0,0.7485,0.3018,65.1,people_talent,financial_growth_shareholder,customer_focus,0.133,financial_growth_shareholder,-0.1875
+MPC,Marathon Petroleum,Energy,2020,same_year,2020,0,0.8135,-0.3513,32.4,integrity_ethics,financial_growth_shareholder,community_social_impact,0.1324,innovation_technology,-0.1489
+MPC,Marathon Petroleum,Energy,2021,same_year,2021,0,0.8983,-0.218,39.1,integrity_ethics,financial_growth_shareholder,sustainability_environment,0.0926,innovation_technology,-0.1229
+MPC,Marathon Petroleum,Energy,2022,same_year,2022,0,0.9136,-0.0969,45.2,integrity_ethics,financial_growth_shareholder,diversity_inclusion,0.0974,innovation_technology,-0.1139
+MPC,Marathon Petroleum,Energy,2023,same_year,2023,0,0.9337,0.0181,50.9,integrity_ethics,financial_growth_shareholder,diversity_inclusion,0.078,innovation_technology,-0.1023
+MPC,Marathon Petroleum,Energy,2024,same_year,2024,0,0.9187,0.0009,50.0,integrity_ethics,financial_growth_shareholder,diversity_inclusion,0.0941,innovation_technology,-0.1059
+OXY,Occidental Petroleum,Energy,2021,same_year,2021,0,0.5616,0.5212,76.1,sustainability_environment,financial_growth_shareholder,innovation_technology,0.3,financial_growth_shareholder,-0.2335
+OXY,Occidental Petroleum,Energy,2022,same_year,2022,0,0.7531,0.6199,81.0,sustainability_environment,sustainability_environment,innovation_technology,0.2573,financial_growth_shareholder,-0.1887
+OXY,Occidental Petroleum,Energy,2023,same_year,2023,0,0.5775,0.4797,74.0,sustainability_environment,financial_growth_shareholder,innovation_technology,0.2918,financial_growth_shareholder,-0.2215
+OXY,Occidental Petroleum,Energy,2024,same_year,2024,0,0.5762,0.5132,75.7,sustainability_environment,financial_growth_shareholder,customer_focus,0.2126,financial_growth_shareholder,-0.2155
+PSX,Phillips 66,Energy,2017,same_year,2017,0,0.755,0.5099,75.5,people_talent,financial_growth_shareholder,customer_focus,0.1672,diversity_inclusion,-0.141
+PSX,Phillips 66,Energy,2018,same_year,2018,0,0.7832,0.3518,67.6,financial_growth_shareholder,financial_growth_shareholder,global_scale_reach,0.1401,diversity_inclusion,-0.1353
+PSX,Phillips 66,Energy,2019,same_year,2019,0,0.8067,0.4857,74.3,people_talent,financial_growth_shareholder,innovation_technology,0.1232,diversity_inclusion,-0.1311
+PSX,Phillips 66,Energy,2020,same_year,2020,0,0.7735,0.2735,63.7,innovation_technology,financial_growth_shareholder,innovation_technology,0.1476,diversity_inclusion,-0.1343
+PSX,Phillips 66,Energy,2021,same_year,2021,0,0.7731,0.1102,55.5,customer_focus,financial_growth_shareholder,customer_focus,0.1379,diversity_inclusion,-0.129
+PSX,Phillips 66,Energy,2022,same_year,2022,0,0.7913,0.2369,61.8,customer_focus,financial_growth_shareholder,customer_focus,0.1613,diversity_inclusion,-0.1025
+PSX,Phillips 66,Energy,2023,carried_forward,2022,1,0.7729,0.2507,62.5,customer_focus,financial_growth_shareholder,customer_focus,0.1601,diversity_inclusion,-0.1228
+PSX,Phillips 66,Energy,2024,carried_forward,2022,2,0.7542,0.2454,62.3,customer_focus,financial_growth_shareholder,customer_focus,0.1602,diversity_inclusion,-0.142
+SLB,SLB (Schlumberger),Energy,2019,same_year,2019,0,0.5141,0.384,69.2,innovation_technology,people_talent,innovation_technology,0.2169,integrity_ethics,-0.1499
+SLB,SLB (Schlumberger),Energy,2020,same_year,2020,0,0.5264,0.4409,72.0,innovation_technology,people_talent,customer_focus,0.2035,diversity_inclusion,-0.1593
+SLB,SLB (Schlumberger),Energy,2021,same_year,2021,0,0.5069,0.3473,67.4,innovation_technology,people_talent,innovation_technology,0.2772,diversity_inclusion,-0.1469
+SLB,SLB (Schlumberger),Energy,2022,same_year,2022,0,0.7368,0.3223,66.1,innovation_technology,people_talent,customer_focus,0.1814,financial_growth_shareholder,-0.1431
+SLB,SLB (Schlumberger),Energy,2023,carried_forward,2022,1,0.6401,0.0268,51.3,innovation_technology,financial_growth_shareholder,customer_focus,0.1886,financial_growth_shareholder,-0.2245
+SLB,SLB (Schlumberger),Energy,2024,carried_forward,2022,2,0.594,-0.0555,47.2,innovation_technology,financial_growth_shareholder,customer_focus,0.1882,financial_growth_shareholder,-0.2264
+VLO,Valero Energy,Energy,2020,same_year,2020,0,0.5073,0.155,57.8,innovation_technology,people_talent,innovation_technology,0.2091,diversity_inclusion,-0.1911
+VLO,Valero Energy,Energy,2021,same_year,2021,0,0.5453,0.1943,59.7,innovation_technology,people_talent,innovation_technology,0.1819,diversity_inclusion,-0.1942
+VLO,Valero Energy,Energy,2022,same_year,2022,0,0.6858,0.2264,61.3,innovation_technology,sustainability_environment,innovation_technology,0.1676,diversity_inclusion,-0.1601
+VLO,Valero Energy,Energy,2023,same_year,2023,0,0.7153,0.6001,80.0,innovation_technology,sustainability_environment,innovation_technology,0.2445,diversity_inclusion,-0.1703
+VLO,Valero Energy,Energy,2024,same_year,2024,0,0.6117,0.6603,83.0,sustainability_environment,sustainability_environment,community_social_impact,0.2394,diversity_inclusion,-0.168
+XOM,ExxonMobil,Energy,2016,same_year,2016,0,0.538,0.4362,71.8,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.3567,financial_growth_shareholder,-0.2432
+XOM,ExxonMobil,Energy,2017,same_year,2017,0,0.4382,0.1845,59.2,innovation_technology,financial_growth_shareholder,innovation_technology,0.1967,financial_growth_shareholder,-0.2837
+XOM,ExxonMobil,Energy,2018,same_year,2018,0,0.3423,-0.203,39.9,innovation_technology,financial_growth_shareholder,sustainability_environment,0.2167,financial_growth_shareholder,-0.3026
+XOM,ExxonMobil,Energy,2019,same_year,2019,0,0.395,0.4544,72.7,innovation_technology,financial_growth_shareholder,innovation_technology,0.2268,financial_growth_shareholder,-0.2726
+XOM,ExxonMobil,Energy,2020,same_year,2020,0,0.4515,0.4025,70.1,innovation_technology,financial_growth_shareholder,innovation_technology,0.2017,financial_growth_shareholder,-0.276
+XOM,ExxonMobil,Energy,2022,same_year,2022,0,0.6237,0.6954,84.8,sustainability_environment,sustainability_environment,customer_focus,0.2568,financial_growth_shareholder,-0.2193
+XOM,ExxonMobil,Energy,2023,same_year,2023,0,0.6975,0.5897,79.5,sustainability_environment,sustainability_environment,customer_focus,0.1988,financial_growth_shareholder,-0.196
+XOM,ExxonMobil,Energy,2024,same_year,2024,0,0.769,0.6411,82.1,sustainability_environment,sustainability_environment,innovation_technology,0.14,people_talent,-0.1355
+AXP,American Express,Financials,2023,same_year,2023,0,0.429,0.5474,77.4,customer_focus,people_talent,customer_focus,0.2593,people_talent,-0.1946
+AXP,American Express,Financials,2024,same_year,2024,0,0.5619,0.4783,73.9,customer_focus,financial_growth_shareholder,community_social_impact,0.2065,integrity_ethics,-0.1756
+BAC,Bank of America,Financials,2016,same_year,2016,0,0.064,-0.0022,49.9,community_social_impact,integrity_ethics,community_social_impact,0.9761,integrity_ethics,-0.2364
+BAC,Bank of America,Financials,2017,same_year,2017,0,0.0493,-0.0486,47.6,community_social_impact,integrity_ethics,community_social_impact,0.9814,integrity_ethics,-0.2206
+BAC,Bank of America,Financials,2018,same_year,2018,0,0.3185,0.3012,65.1,customer_focus,integrity_ethics,customer_focus,0.3219,integrity_ethics,-0.2102
+BAC,Bank of America,Financials,2019,same_year,2019,0,0.3776,-0.0245,48.8,innovation_technology,people_talent,innovation_technology,0.3873,people_talent,-0.2405
+BAC,Bank of America,Financials,2020,same_year,2020,0,0.1841,0.2112,60.6,customer_focus,financial_growth_shareholder,customer_focus,0.6245,financial_growth_shareholder,-0.2049
+BAC,Bank of America,Financials,2021,same_year,2021,0,0.348,-0.2272,38.6,innovation_technology,financial_growth_shareholder,innovation_technology,0.3248,financial_growth_shareholder,-0.1926
+BAC,Bank of America,Financials,2022,same_year,2022,0,0.2512,-0.0534,47.3,innovation_technology,sustainability_environment,customer_focus,0.4526,sustainability_environment,-0.1649
+BAC,Bank of America,Financials,2023,same_year,2023,0,0.2341,-0.1997,40.0,innovation_technology,sustainability_environment,innovation_technology,0.5986,sustainability_environment,-0.207
+BAC,Bank of America,Financials,2024,same_year,2024,0,0.2618,-0.1751,41.2,innovation_technology,financial_growth_shareholder,customer_focus,0.3993,financial_growth_shareholder,-0.2142
+BLK,BlackRock,Financials,2016,same_year,2016,0,0.2341,-0.7939,10.3,financial_growth_shareholder,integrity_ethics,financial_growth_shareholder,0.9111,integrity_ethics,-0.2334
+BLK,BlackRock,Financials,2017,same_year,2017,0,0.2674,-0.3576,32.1,customer_focus,financial_growth_shareholder,sustainability_environment,0.3095,financial_growth_shareholder,-0.2724
+BLK,BlackRock,Financials,2018,same_year,2018,0,0.2478,-0.657,17.2,people_talent,financial_growth_shareholder,community_social_impact,0.325,financial_growth_shareholder,-0.2494
+BLK,BlackRock,Financials,2019,same_year,2019,0,0.8021,-0.2296,38.5,innovation_technology,financial_growth_shareholder,community_social_impact,0.1208,global_scale_reach,-0.092
+BLK,BlackRock,Financials,2020,same_year,2020,0,0.5304,0.1218,56.1,sustainability_environment,financial_growth_shareholder,community_social_impact,0.2058,financial_growth_shareholder,-0.1881
+BLK,BlackRock,Financials,2021,same_year,2021,0,0.7194,-0.4581,27.1,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.1198,financial_growth_shareholder,-0.1909
+BLK,BlackRock,Financials,2022,same_year,2022,0,0.4819,-0.2694,36.5,innovation_technology,financial_growth_shareholder,community_social_impact,0.1713,financial_growth_shareholder,-0.1888
+BLK,BlackRock,Financials,2023,same_year,2023,0,0.5635,0.1211,56.1,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.166,financial_growth_shareholder,-0.1934
+BLK,BlackRock,Financials,2024,same_year,2024,0,0.7297,-0.0641,46.8,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.142,diversity_inclusion,-0.1344
+C,Citigroup,Financials,2017,same_year,2017,0,0.4295,-0.5364,23.2,financial_growth_shareholder,integrity_ethics,financial_growth_shareholder,0.2683,integrity_ethics,-0.2397
+C,Citigroup,Financials,2018,same_year,2018,0,0.4798,-0.3886,30.6,financial_growth_shareholder,integrity_ethics,customer_focus,0.2585,integrity_ethics,-0.2122
+C,Citigroup,Financials,2019,same_year,2019,0,0.4817,-0.252,37.4,financial_growth_shareholder,integrity_ethics,customer_focus,0.2576,integrity_ethics,-0.2034
+C,Citigroup,Financials,2020,same_year,2020,0,0.4121,-0.4645,26.8,financial_growth_shareholder,integrity_ethics,financial_growth_shareholder,0.285,integrity_ethics,-0.2095
+C,Citigroup,Financials,2021,same_year,2021,0,0.4174,-0.1567,42.2,financial_growth_shareholder,integrity_ethics,financial_growth_shareholder,0.2673,integrity_ethics,-0.1923
+C,Citigroup,Financials,2022,same_year,2022,0,0.3761,-0.2338,38.3,financial_growth_shareholder,people_talent,financial_growth_shareholder,0.283,people_talent,-0.1814
+C,Citigroup,Financials,2023,carried_forward,2022,1,0.4278,-0.1181,44.1,financial_growth_shareholder,people_talent,global_scale_reach,0.2682,people_talent,-0.1839
+C,Citigroup,Financials,2024,carried_forward,2022,2,0.4018,-0.1151,44.2,financial_growth_shareholder,people_talent,financial_growth_shareholder,0.2768,people_talent,-0.181
+GS,Goldman Sachs,Financials,2016,same_year,2016,0,0.5011,0.5083,75.4,customer_focus,financial_growth_shareholder,customer_focus,0.2417,financial_growth_shareholder,-0.1806
+GS,Goldman Sachs,Financials,2017,same_year,2017,0,0.2573,-0.1445,42.8,innovation_technology,financial_growth_shareholder,innovation_technology,0.2588,financial_growth_shareholder,-0.307
+GS,Goldman Sachs,Financials,2018,same_year,2018,0,0.2459,-0.1315,43.4,community_social_impact,financial_growth_shareholder,community_social_impact,0.3292,financial_growth_shareholder,-0.3684
+GS,Goldman Sachs,Financials,2019,same_year,2019,0,0.5439,0.7869,89.3,customer_focus,financial_growth_shareholder,community_social_impact,0.2986,people_talent,-0.1616
+GS,Goldman Sachs,Financials,2020,same_year,2020,0,0.5137,0.3945,69.7,sustainability_environment,financial_growth_shareholder,global_scale_reach,0.2149,integrity_ethics,-0.1615
+GS,Goldman Sachs,Financials,2021,same_year,2021,0,0.2343,0.1331,56.7,customer_focus,financial_growth_shareholder,global_scale_reach,0.2917,financial_growth_shareholder,-0.28
+GS,Goldman Sachs,Financials,2022,same_year,2022,0,0.5894,0.6275,81.4,customer_focus,financial_growth_shareholder,customer_focus,0.2509,people_talent,-0.1369
+GS,Goldman Sachs,Financials,2023,same_year,2023,0,0.5161,0.7135,85.7,customer_focus,financial_growth_shareholder,community_social_impact,0.2969,diversity_inclusion,-0.1612
+GS,Goldman Sachs,Financials,2024,same_year,2024,0,0.5275,0.5708,78.5,community_social_impact,financial_growth_shareholder,community_social_impact,0.4701,diversity_inclusion,-0.142
+JPM,JPMorgan Chase,Financials,2016,same_year,2016,0,0.4642,-0.4593,27.0,people_talent,financial_growth_shareholder,community_social_impact,0.3188,financial_growth_shareholder,-0.2061
+JPM,JPMorgan Chase,Financials,2017,same_year,2017,0,0.5065,-0.0677,46.6,community_social_impact,financial_growth_shareholder,community_social_impact,0.3662,financial_growth_shareholder,-0.2072
+JPM,JPMorgan Chase,Financials,2018,same_year,2018,0,0.5094,-0.2056,39.7,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.2904,financial_growth_shareholder,-0.2642
+JPM,JPMorgan Chase,Financials,2019,same_year,2019,0,0.4999,-0.2141,39.3,community_social_impact,financial_growth_shareholder,community_social_impact,0.3737,financial_growth_shareholder,-0.2137
+JPM,JPMorgan Chase,Financials,2020,same_year,2020,0,0.5722,-0.1983,40.1,diversity_inclusion,financial_growth_shareholder,community_social_impact,0.2892,financial_growth_shareholder,-0.182
+JPM,JPMorgan Chase,Financials,2021,same_year,2021,0,0.676,0.0009,50.0,diversity_inclusion,people_talent,diversity_inclusion,0.4006,financial_growth_shareholder,-0.1922
+JPM,JPMorgan Chase,Financials,2022,same_year,2022,0,0.5869,-0.1792,41.0,diversity_inclusion,people_talent,diversity_inclusion,0.2739,financial_growth_shareholder,-0.1732
+JPM,JPMorgan Chase,Financials,2023,same_year,2023,0,0.5787,-0.4085,29.6,community_social_impact,financial_growth_shareholder,community_social_impact,0.304,people_talent,-0.1504
+JPM,JPMorgan Chase,Financials,2024,same_year,2024,0,0.495,0.6003,80.0,customer_focus,financial_growth_shareholder,community_social_impact,0.2081,financial_growth_shareholder,-0.2006
+MS,Morgan Stanley,Financials,2016,same_year,2016,0,0.407,0.0423,52.1,community_social_impact,financial_growth_shareholder,community_social_impact,0.2397,financial_growth_shareholder,-0.2942
+MS,Morgan Stanley,Financials,2017,same_year,2017,0,0.4452,0.317,65.8,community_social_impact,financial_growth_shareholder,community_social_impact,0.2825,financial_growth_shareholder,-0.2599
+MS,Morgan Stanley,Financials,2018,same_year,2018,0,0.3029,-0.2762,36.2,people_talent,financial_growth_shareholder,community_social_impact,0.3149,financial_growth_shareholder,-0.2297
+MS,Morgan Stanley,Financials,2019,same_year,2019,0,0.329,-0.2445,37.8,people_talent,financial_growth_shareholder,community_social_impact,0.315,financial_growth_shareholder,-0.2187
+MS,Morgan Stanley,Financials,2020,same_year,2020,0,0.14,-0.1406,43.0,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.5045,financial_growth_shareholder,-0.1861
+MS,Morgan Stanley,Financials,2021,same_year,2021,0,0.1032,-0.6421,17.9,sustainability_environment,diversity_inclusion,sustainability_environment,0.526,diversity_inclusion,-0.2048
+MS,Morgan Stanley,Financials,2022,same_year,2022,0,0.227,-0.3115,34.4,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.4647,financial_growth_shareholder,-0.1972
+MS,Morgan Stanley,Financials,2023,same_year,2023,0,0.2827,0.2949,64.7,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.4324,financial_growth_shareholder,-0.2293
+MS,Morgan Stanley,Financials,2024,same_year,2024,0,0.2351,0.0059,50.3,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.4522,financial_growth_shareholder,-0.221
+SCHW,Charles Schwab,Financials,2016,same_year,2016,0,0.7409,0.0999,55.0,innovation_technology,diversity_inclusion,innovation_technology,0.1987,diversity_inclusion,-0.1917
+SCHW,Charles Schwab,Financials,2017,same_year,2017,0,0.6763,0.6839,84.2,customer_focus,diversity_inclusion,innovation_technology,0.2005,financial_growth_shareholder,-0.1647
+SCHW,Charles Schwab,Financials,2018,same_year,2018,0,0.6257,0.3747,68.7,innovation_technology,people_talent,innovation_technology,0.2527,financial_growth_shareholder,-0.1827
+SCHW,Charles Schwab,Financials,2019,same_year,2019,0,0.6665,-0.0515,47.4,customer_focus,diversity_inclusion,innovation_technology,0.1484,diversity_inclusion,-0.2102
+SCHW,Charles Schwab,Financials,2020,same_year,2020,0,0.3425,-0.065,46.7,innovation_technology,people_talent,innovation_technology,0.3232,diversity_inclusion,-0.2512
+SCHW,Charles Schwab,Financials,2021,same_year,2021,0,0.5866,0.5178,75.9,customer_focus,diversity_inclusion,customer_focus,0.2121,diversity_inclusion,-0.2287
+SCHW,Charles Schwab,Financials,2022,same_year,2022,0,0.3797,0.3172,65.9,customer_focus,diversity_inclusion,customer_focus,0.2392,diversity_inclusion,-0.2157
+SCHW,Charles Schwab,Financials,2023,same_year,2023,0,0.4621,0.4029,70.1,customer_focus,diversity_inclusion,customer_focus,0.1802,diversity_inclusion,-0.3438
+SCHW,Charles Schwab,Financials,2024,same_year,2024,0,0.549,0.4775,73.9,customer_focus,diversity_inclusion,customer_focus,0.2207,diversity_inclusion,-0.3229
+WFC,Wells Fargo,Financials,2016,same_year,2016,0,0.5029,0.4068,70.3,community_social_impact,integrity_ethics,community_social_impact,0.2368,diversity_inclusion,-0.1696
+WFC,Wells Fargo,Financials,2017,same_year,2017,0,0.3638,0.0924,54.6,community_social_impact,integrity_ethics,community_social_impact,0.2948,integrity_ethics,-0.2997
+WFC,Wells Fargo,Financials,2018,same_year,2018,0,0.5688,-0.4856,25.7,financial_growth_shareholder,integrity_ethics,financial_growth_shareholder,0.278,integrity_ethics,-0.2219
+WFC,Wells Fargo,Financials,2019,same_year,2019,0,0.533,-0.6561,17.2,financial_growth_shareholder,diversity_inclusion,financial_growth_shareholder,0.3211,diversity_inclusion,-0.1778
+WFC,Wells Fargo,Financials,2020,same_year,2020,0,0.6199,-0.2141,39.3,financial_growth_shareholder,people_talent,financial_growth_shareholder,0.29,diversity_inclusion,-0.1869
+WFC,Wells Fargo,Financials,2021,same_year,2021,0,0.591,-0.1311,43.4,financial_growth_shareholder,diversity_inclusion,financial_growth_shareholder,0.3043,diversity_inclusion,-0.2244
+WFC,Wells Fargo,Financials,2022,same_year,2022,0,0.6693,0.4067,70.3,people_talent,people_talent,community_social_impact,0.2793,diversity_inclusion,-0.1829
+WFC,Wells Fargo,Financials,2023,same_year,2023,0,0.6209,-0.0048,49.8,people_talent,financial_growth_shareholder,community_social_impact,0.3052,integrity_ethics,-0.1273
+WFC,Wells Fargo,Financials,2024,same_year,2024,0,0.6848,0.4077,70.4,people_talent,people_talent,community_social_impact,0.2834,diversity_inclusion,-0.1365
+ABBV,AbbVie,Healthcare,2017,same_year,2017,0,0.5489,0.5563,77.8,innovation_technology,financial_growth_shareholder,customer_focus,0.1659,financial_growth_shareholder,-0.2299
+ABBV,AbbVie,Healthcare,2018,same_year,2018,0,0.577,0.5882,79.4,innovation_technology,integrity_ethics,innovation_technology,0.1914,financial_growth_shareholder,-0.1962
+ABBV,AbbVie,Healthcare,2019,same_year,2019,0,0.4224,0.2117,60.6,global_scale_reach,integrity_ethics,global_scale_reach,0.2665,integrity_ethics,-0.1958
+ABBV,AbbVie,Healthcare,2020,same_year,2020,0,0.405,0.1806,59.0,global_scale_reach,integrity_ethics,global_scale_reach,0.2662,integrity_ethics,-0.1986
+ABBV,AbbVie,Healthcare,2021,same_year,2021,0,0.5556,0.5847,79.2,innovation_technology,people_talent,innovation_technology,0.3404,diversity_inclusion,-0.148
+ABBV,AbbVie,Healthcare,2022,same_year,2022,0,0.7537,0.6297,81.5,innovation_technology,people_talent,customer_focus,0.1612,financial_growth_shareholder,-0.1624
+ABBV,AbbVie,Healthcare,2023,same_year,2023,0,0.7992,0.4588,72.9,innovation_technology,diversity_inclusion,customer_focus,0.164,financial_growth_shareholder,-0.119
+ABBV,AbbVie,Healthcare,2024,carried_forward,2023,1,0.8223,0.3933,69.7,innovation_technology,diversity_inclusion,customer_focus,0.1613,financial_growth_shareholder,-0.1089
+ABT,Abbott Laboratories,Healthcare,2016,same_year,2016,0,0.4712,-0.2363,38.2,innovation_technology,financial_growth_shareholder,innovation_technology,0.1677,financial_growth_shareholder,-0.3557
+ABT,Abbott Laboratories,Healthcare,2017,same_year,2017,0,0.3311,-0.2622,36.9,innovation_technology,financial_growth_shareholder,innovation_technology,0.2874,financial_growth_shareholder,-0.3714
+ABT,Abbott Laboratories,Healthcare,2018,same_year,2018,0,0.1724,-0.4446,27.8,innovation_technology,financial_growth_shareholder,innovation_technology,0.3598,financial_growth_shareholder,-0.3748
+ABT,Abbott Laboratories,Healthcare,2019,same_year,2019,0,0.1762,-0.3794,31.0,innovation_technology,financial_growth_shareholder,innovation_technology,0.363,financial_growth_shareholder,-0.3689
+ABT,Abbott Laboratories,Healthcare,2020,same_year,2020,0,0.1502,-0.3827,30.9,innovation_technology,financial_growth_shareholder,customer_focus,0.3535,financial_growth_shareholder,-0.4289
+ABT,Abbott Laboratories,Healthcare,2021,same_year,2021,0,0.2231,-0.2627,36.9,innovation_technology,financial_growth_shareholder,innovation_technology,0.3591,financial_growth_shareholder,-0.3562
+ABT,Abbott Laboratories,Healthcare,2022,same_year,2022,0,0.1907,-0.3362,33.2,innovation_technology,financial_growth_shareholder,innovation_technology,0.3675,financial_growth_shareholder,-0.3506
+ABT,Abbott Laboratories,Healthcare,2023,same_year,2023,0,0.1879,-0.3533,32.3,innovation_technology,financial_growth_shareholder,innovation_technology,0.364,financial_growth_shareholder,-0.3527
+ABT,Abbott Laboratories,Healthcare,2024,same_year,2024,0,0.2254,-0.428,28.6,innovation_technology,financial_growth_shareholder,innovation_technology,0.3459,financial_growth_shareholder,-0.2907
+BMY,Bristol-Myers Squibb,Healthcare,2017,same_year,2017,0,0.4539,-0.5135,24.3,innovation_technology,financial_growth_shareholder,sustainability_environment,0.1627,financial_growth_shareholder,-0.3079
+BMY,Bristol-Myers Squibb,Healthcare,2018,same_year,2018,0,0.2773,0.2317,61.6,innovation_technology,financial_growth_shareholder,community_social_impact,0.2487,financial_growth_shareholder,-0.249
+BMY,Bristol-Myers Squibb,Healthcare,2019,same_year,2019,0,0.2866,0.1647,58.2,innovation_technology,financial_growth_shareholder,community_social_impact,0.2442,financial_growth_shareholder,-0.2504
+BMY,Bristol-Myers Squibb,Healthcare,2020,same_year,2020,0,0.6691,-0.5403,23.0,innovation_technology,financial_growth_shareholder,customer_focus,0.1298,financial_growth_shareholder,-0.2435
+BMY,Bristol-Myers Squibb,Healthcare,2021,same_year,2021,0,0.6075,-0.4299,28.5,innovation_technology,financial_growth_shareholder,customer_focus,0.1363,financial_growth_shareholder,-0.2485
+BMY,Bristol-Myers Squibb,Healthcare,2022,same_year,2022,0,0.6926,0.0921,54.6,innovation_technology,people_talent,customer_focus,0.1486,financial_growth_shareholder,-0.1915
+BMY,Bristol-Myers Squibb,Healthcare,2023,same_year,2023,0,0.7129,0.1719,58.6,innovation_technology,diversity_inclusion,customer_focus,0.1508,financial_growth_shareholder,-0.1732
+BMY,Bristol-Myers Squibb,Healthcare,2024,same_year,2024,0,0.7469,0.0145,50.7,innovation_technology,people_talent,customer_focus,0.1359,financial_growth_shareholder,-0.1654
+JNJ,Johnson & Johnson,Healthcare,2016,same_year,2016,0,0.4222,0.0428,52.1,innovation_technology,financial_growth_shareholder,innovation_technology,0.2023,financial_growth_shareholder,-0.2607
+JNJ,Johnson & Johnson,Healthcare,2017,same_year,2017,0,0.3097,-0.3539,32.3,integrity_ethics,financial_growth_shareholder,integrity_ethics,0.4976,financial_growth_shareholder,-0.3017
+JNJ,Johnson & Johnson,Healthcare,2018,same_year,2018,0,0.5106,-0.1305,43.5,innovation_technology,financial_growth_shareholder,innovation_technology,0.2282,financial_growth_shareholder,-0.274
+JNJ,Johnson & Johnson,Healthcare,2019,same_year,2019,0,0.5444,-0.0519,47.4,customer_focus,financial_growth_shareholder,customer_focus,0.2269,financial_growth_shareholder,-0.2279
+JNJ,Johnson & Johnson,Healthcare,2020,same_year,2020,0,0.4732,-0.0542,47.3,customer_focus,financial_growth_shareholder,community_social_impact,0.184,financial_growth_shareholder,-0.2369
+JNJ,Johnson & Johnson,Healthcare,2021,carried_forward,2020,1,0.5192,-0.2035,39.8,customer_focus,financial_growth_shareholder,customer_focus,0.1728,financial_growth_shareholder,-0.2011
+JNJ,Johnson & Johnson,Healthcare,2022,carried_forward,2020,2,0.5347,-0.3098,34.5,customer_focus,financial_growth_shareholder,sustainability_environment,0.1684,financial_growth_shareholder,-0.1951
+JNJ,Johnson & Johnson,Healthcare,2023,same_year,2023,0,0.5619,0.0915,54.6,community_social_impact,financial_growth_shareholder,community_social_impact,0.1914,financial_growth_shareholder,-0.2111
+JNJ,Johnson & Johnson,Healthcare,2024,carried_forward,2023,1,0.5792,0.1391,57.0,community_social_impact,financial_growth_shareholder,community_social_impact,0.1903,financial_growth_shareholder,-0.192
+LLY,Eli Lilly,Healthcare,2016,same_year,2016,0,0.4684,-0.2822,35.9,customer_focus,financial_growth_shareholder,customer_focus,0.2275,financial_growth_shareholder,-0.2347
+LLY,Eli Lilly,Healthcare,2017,same_year,2017,0,0.5187,-0.1412,42.9,integrity_ethics,financial_growth_shareholder,quality_excellence,0.2644,financial_growth_shareholder,-0.2699
+LLY,Eli Lilly,Healthcare,2018,same_year,2018,0,0.4652,-0.2711,36.4,integrity_ethics,financial_growth_shareholder,quality_excellence,0.2628,financial_growth_shareholder,-0.3235
+LLY,Eli Lilly,Healthcare,2019,same_year,2019,0,0.5202,-0.3352,33.2,integrity_ethics,financial_growth_shareholder,quality_excellence,0.2564,financial_growth_shareholder,-0.2676
+LLY,Eli Lilly,Healthcare,2020,same_year,2020,0,0.5214,-0.192,40.4,integrity_ethics,financial_growth_shareholder,quality_excellence,0.2499,financial_growth_shareholder,-0.2695
+LLY,Eli Lilly,Healthcare,2021,carried_forward,2020,1,0.5893,0.1769,58.8,integrity_ethics,financial_growth_shareholder,quality_excellence,0.244,financial_growth_shareholder,-0.2274
+LLY,Eli Lilly,Healthcare,2022,carried_forward,2020,2,0.5724,0.1019,55.1,integrity_ethics,financial_growth_shareholder,quality_excellence,0.2439,financial_growth_shareholder,-0.2272
+LLY,Eli Lilly,Healthcare,2023,carried_forward,2020,3,0.5709,-0.0502,47.5,integrity_ethics,people_talent,quality_excellence,0.2473,financial_growth_shareholder,-0.1801
+LLY,Eli Lilly,Healthcare,2024,carried_forward,2020,4,0.5633,-0.1133,44.3,integrity_ethics,people_talent,quality_excellence,0.2495,financial_growth_shareholder,-0.1673
+MDT,Medtronic,Healthcare,2016,same_year,2016,0,0.2888,-0.3031,34.8,people_talent,financial_growth_shareholder,customer_focus,0.2266,financial_growth_shareholder,-0.4227
+MDT,Medtronic,Healthcare,2017,same_year,2017,0,0.4096,-0.3119,34.4,integrity_ethics,financial_growth_shareholder,global_scale_reach,0.3082,financial_growth_shareholder,-0.3301
+MDT,Medtronic,Healthcare,2018,same_year,2018,0,0.2832,-0.2015,39.9,global_scale_reach,financial_growth_shareholder,global_scale_reach,0.3485,financial_growth_shareholder,-0.2752
+MDT,Medtronic,Healthcare,2019,same_year,2019,0,0.4743,-0.1785,41.1,integrity_ethics,financial_growth_shareholder,global_scale_reach,0.2986,financial_growth_shareholder,-0.2937
+MDT,Medtronic,Healthcare,2020,same_year,2020,0,0.602,-0.0844,45.8,innovation_technology,financial_growth_shareholder,customer_focus,0.1023,financial_growth_shareholder,-0.2718
+MDT,Medtronic,Healthcare,2021,same_year,2021,0,0.7233,0.2391,62.0,integrity_ethics,financial_growth_shareholder,community_social_impact,0.1021,financial_growth_shareholder,-0.2199
+MDT,Medtronic,Healthcare,2022,carried_forward,2021,1,0.7891,0.359,68.0,integrity_ethics,financial_growth_shareholder,community_social_impact,0.1007,financial_growth_shareholder,-0.1594
+MDT,Medtronic,Healthcare,2023,carried_forward,2021,2,0.777,0.1953,59.8,integrity_ethics,financial_growth_shareholder,community_social_impact,0.1035,financial_growth_shareholder,-0.1605
+MDT,Medtronic,Healthcare,2024,carried_forward,2021,3,0.7934,0.4331,71.7,integrity_ethics,financial_growth_shareholder,community_social_impact,0.1003,financial_growth_shareholder,-0.164
+MRK,Merck,Healthcare,2016,same_year,2016,0,0.246,0.2703,63.5,innovation_technology,financial_growth_shareholder,community_social_impact,0.3132,financial_growth_shareholder,-0.341
+MRK,Merck,Healthcare,2017,same_year,2017,0,0.5201,0.1347,56.7,innovation_technology,financial_growth_shareholder,innovation_technology,0.1693,financial_growth_shareholder,-0.297
+MRK,Merck,Healthcare,2018,same_year,2018,0,0.5628,-0.009,49.6,innovation_technology,financial_growth_shareholder,customer_focus,0.2037,financial_growth_shareholder,-0.298
+MRK,Merck,Healthcare,2019,same_year,2019,0,0.512,-0.2201,39.0,innovation_technology,financial_growth_shareholder,customer_focus,0.1834,financial_growth_shareholder,-0.3209
+MRK,Merck,Healthcare,2020,same_year,2020,0,0.5515,0.1183,55.9,innovation_technology,financial_growth_shareholder,innovation_technology,0.2052,financial_growth_shareholder,-0.3019
+MRK,Merck,Healthcare,2021,carried_forward,2020,1,0.557,0.099,55.0,innovation_technology,financial_growth_shareholder,innovation_technology,0.1857,financial_growth_shareholder,-0.2955
+MRK,Merck,Healthcare,2022,carried_forward,2020,2,0.6364,0.288,64.4,innovation_technology,financial_growth_shareholder,innovation_technology,0.1849,financial_growth_shareholder,-0.2379
+MRK,Merck,Healthcare,2023,carried_forward,2020,3,0.6299,0.1842,59.2,innovation_technology,financial_growth_shareholder,customer_focus,0.1677,financial_growth_shareholder,-0.2433
+MRK,Merck,Healthcare,2024,carried_forward,2020,4,0.6506,0.3199,66.0,innovation_technology,financial_growth_shareholder,innovation_technology,0.1789,financial_growth_shareholder,-0.2236
+PFE,Pfizer,Healthcare,2016,same_year,2016,0,0.5469,-0.2717,36.4,innovation_technology,financial_growth_shareholder,customer_focus,0.1331,financial_growth_shareholder,-0.2953
+PFE,Pfizer,Healthcare,2017,same_year,2017,0,0.8103,-0.1398,43.0,innovation_technology,financial_growth_shareholder,customer_focus,0.0849,financial_growth_shareholder,-0.1455
+PFE,Pfizer,Healthcare,2018,carried_forward,2017,1,0.7841,0.0269,51.3,innovation_technology,financial_growth_shareholder,customer_focus,0.0912,financial_growth_shareholder,-0.1701
+PFE,Pfizer,Healthcare,2019,carried_forward,2017,2,0.769,0.077,53.8,innovation_technology,financial_growth_shareholder,customer_focus,0.0844,financial_growth_shareholder,-0.1796
+PFE,Pfizer,Healthcare,2020,carried_forward,2017,3,0.8183,0.1586,57.9,innovation_technology,financial_growth_shareholder,community_social_impact,0.0831,financial_growth_shareholder,-0.1414
+PFE,Pfizer,Healthcare,2021,same_year,2021,0,0.8637,-0.0545,47.3,innovation_technology,financial_growth_shareholder,customer_focus,0.0883,financial_growth_shareholder,-0.1132
+PFE,Pfizer,Healthcare,2022,same_year,2022,0,0.8677,0.3251,66.3,innovation_technology,financial_growth_shareholder,customer_focus,0.0812,financial_growth_shareholder,-0.1119
+PFE,Pfizer,Healthcare,2023,same_year,2023,0,0.8772,-0.1427,42.9,innovation_technology,financial_growth_shareholder,customer_focus,0.0854,financial_growth_shareholder,-0.1092
+PFE,Pfizer,Healthcare,2024,same_year,2024,0,0.8004,-0.1267,43.7,innovation_technology,financial_growth_shareholder,customer_focus,0.1015,financial_growth_shareholder,-0.1474
+TMO,Thermo Fisher Scientific,Healthcare,2017,same_year,2017,0,0.1978,0.079,54.0,innovation_technology,diversity_inclusion,customer_focus,0.4848,diversity_inclusion,-0.2803
+TMO,Thermo Fisher Scientific,Healthcare,2018,carried_forward,2017,1,0.191,0.0452,52.3,innovation_technology,diversity_inclusion,customer_focus,0.4842,diversity_inclusion,-0.2702
+TMO,Thermo Fisher Scientific,Healthcare,2019,carried_forward,2017,2,0.2457,0.2525,62.6,innovation_technology,financial_growth_shareholder,customer_focus,0.455,financial_growth_shareholder,-0.2572
+TMO,Thermo Fisher Scientific,Healthcare,2020,carried_forward,2017,3,0.2511,0.3718,68.6,innovation_technology,financial_growth_shareholder,customer_focus,0.4578,financial_growth_shareholder,-0.25
+TMO,Thermo Fisher Scientific,Healthcare,2021,carried_forward,2017,4,0.2282,0.1592,58.0,innovation_technology,financial_growth_shareholder,customer_focus,0.4582,financial_growth_shareholder,-0.2716
+TMO,Thermo Fisher Scientific,Healthcare,2022,carried_forward,2017,5,0.2562,0.291,64.5,innovation_technology,financial_growth_shareholder,customer_focus,0.4588,financial_growth_shareholder,-0.2252
+TMO,Thermo Fisher Scientific,Healthcare,2023,carried_forward,2017,6,0.1949,-0.071,46.5,innovation_technology,financial_growth_shareholder,customer_focus,0.4707,financial_growth_shareholder,-0.2547
+TMO,Thermo Fisher Scientific,Healthcare,2024,carried_forward,2017,7,0.2772,0.2364,61.8,innovation_technology,financial_growth_shareholder,customer_focus,0.4539,financial_growth_shareholder,-0.2713
+UNH,UnitedHealth Group,Healthcare,2018,same_year,2018,0,0.2498,-0.5797,21.0,innovation_technology,financial_growth_shareholder,innovation_technology,0.2205,financial_growth_shareholder,-0.2808
+UNH,UnitedHealth Group,Healthcare,2019,same_year,2019,0,0.2644,-0.3811,30.9,innovation_technology,financial_growth_shareholder,innovation_technology,0.3629,financial_growth_shareholder,-0.2945
+UNH,UnitedHealth Group,Healthcare,2020,carried_forward,2019,1,0.2986,-0.4396,28.0,innovation_technology,financial_growth_shareholder,innovation_technology,0.3553,financial_growth_shareholder,-0.2634
+UNH,UnitedHealth Group,Healthcare,2021,carried_forward,2019,2,0.3121,-0.3952,30.2,innovation_technology,financial_growth_shareholder,innovation_technology,0.3611,financial_growth_shareholder,-0.2451
+UNH,UnitedHealth Group,Healthcare,2022,carried_forward,2019,3,0.2473,-0.3988,30.1,innovation_technology,financial_growth_shareholder,innovation_technology,0.3664,financial_growth_shareholder,-0.2586
+UNH,UnitedHealth Group,Healthcare,2023,carried_forward,2019,4,0.2681,-0.4704,26.5,innovation_technology,financial_growth_shareholder,innovation_technology,0.362,financial_growth_shareholder,-0.2422
+UNH,UnitedHealth Group,Healthcare,2024,carried_forward,2019,5,0.3169,-0.299,35.0,innovation_technology,integrity_ethics,innovation_technology,0.3462,integrity_ethics,-0.2434
+AVGO,Broadcom,Technology,2019,carried_forward,2018,1,0.2158,-0.1827,40.9,innovation_technology,people_talent,customer_focus,0.2507,people_talent,-0.2882
+AVGO,Broadcom,Technology,2020,carried_forward,2018,2,0.2618,0.0949,54.7,innovation_technology,diversity_inclusion,customer_focus,0.2526,diversity_inclusion,-0.3708
+AVGO,Broadcom,Technology,2021,carried_forward,2018,3,0.1886,-0.0283,48.6,innovation_technology,diversity_inclusion,customer_focus,0.2454,diversity_inclusion,-0.4215
+AVGO,Broadcom,Technology,2022,carried_forward,2018,4,0.2944,0.0946,54.7,innovation_technology,diversity_inclusion,customer_focus,0.2497,diversity_inclusion,-0.3294
+AVGO,Broadcom,Technology,2023,carried_forward,2018,5,0.2673,0.0563,52.8,innovation_technology,diversity_inclusion,customer_focus,0.2436,diversity_inclusion,-0.3816
+AVGO,Broadcom,Technology,2024,carried_forward,2018,6,0.3307,0.0842,54.2,innovation_technology,diversity_inclusion,customer_focus,0.2515,diversity_inclusion,-0.3179
+CRM,Salesforce,Technology,2017,same_year,2017,0,0.4498,0.3678,68.4,innovation_technology,people_talent,customer_focus,0.3352,diversity_inclusion,-0.2301
+CRM,Salesforce,Technology,2018,same_year,2018,0,0.3648,0.1224,56.1,innovation_technology,diversity_inclusion,customer_focus,0.3334,diversity_inclusion,-0.276
+CRM,Salesforce,Technology,2019,same_year,2019,0,0.372,0.1038,55.2,innovation_technology,diversity_inclusion,innovation_technology,0.3396,diversity_inclusion,-0.297
+CRM,Salesforce,Technology,2020,same_year,2020,0,0.4932,0.3963,69.8,innovation_technology,people_talent,innovation_technology,0.3174,diversity_inclusion,-0.1972
+CRM,Salesforce,Technology,2021,same_year,2021,0,0.4422,0.3398,67.0,innovation_technology,people_talent,customer_focus,0.352,diversity_inclusion,-0.2229
+CRM,Salesforce,Technology,2022,carried_forward,2021,1,0.4062,0.2632,63.2,innovation_technology,people_talent,customer_focus,0.367,diversity_inclusion,-0.2335
+CRM,Salesforce,Technology,2023,carried_forward,2021,2,0.4017,0.2452,62.3,innovation_technology,diversity_inclusion,customer_focus,0.3599,diversity_inclusion,-0.2074
+CRM,Salesforce,Technology,2024,carried_forward,2021,3,0.4041,0.3058,65.3,innovation_technology,diversity_inclusion,customer_focus,0.3573,diversity_inclusion,-0.2124
+GOOGL,Alphabet,Technology,2016,same_year,2016,0,0.7793,0.342,67.1,innovation_technology,innovation_technology,customer_focus,0.1567,diversity_inclusion,-0.2047
+GOOGL,Alphabet,Technology,2017,same_year,2017,0,0.7772,0.1819,59.1,innovation_technology,innovation_technology,customer_focus,0.155,diversity_inclusion,-0.2096
+GOOGL,Alphabet,Technology,2018,same_year,2018,0,0.7499,0.204,60.2,innovation_technology,diversity_inclusion,customer_focus,0.1545,diversity_inclusion,-0.2327
+GOOGL,Alphabet,Technology,2019,same_year,2019,0,0.748,0.0842,54.2,innovation_technology,diversity_inclusion,customer_focus,0.1565,diversity_inclusion,-0.215
+GOOGL,Alphabet,Technology,2020,same_year,2020,0,0.75,0.1299,56.5,innovation_technology,innovation_technology,customer_focus,0.1547,diversity_inclusion,-0.206
+GOOGL,Alphabet,Technology,2021,same_year,2021,0,0.7203,0.1032,55.2,innovation_technology,integrity_ethics,innovation_technology,0.1602,diversity_inclusion,-0.1515
+GOOGL,Alphabet,Technology,2022,same_year,2022,0,0.6168,-0.1789,41.1,innovation_technology,integrity_ethics,innovation_technology,0.1991,sustainability_environment,-0.1762
+GOOGL,Alphabet,Technology,2023,same_year,2023,0,0.7217,0.1938,59.7,innovation_technology,integrity_ethics,innovation_technology,0.1715,diversity_inclusion,-0.1289
+GOOGL,Alphabet,Technology,2024,same_year,2024,0,0.7433,0.3087,65.4,innovation_technology,integrity_ethics,customer_focus,0.1543,integrity_ethics,-0.1194
+IBM,IBM,Technology,2020,same_year,2020,0,0.6518,0.6155,80.8,innovation_technology,people_talent,innovation_technology,0.2448,financial_growth_shareholder,-0.1583
+IBM,IBM,Technology,2021,same_year,2021,0,0.5481,0.3201,66.0,innovation_technology,people_talent,innovation_technology,0.3119,diversity_inclusion,-0.1888
+IBM,IBM,Technology,2022,same_year,2022,0,0.5308,0.5631,78.2,innovation_technology,people_talent,innovation_technology,0.3864,diversity_inclusion,-0.1845
+IBM,IBM,Technology,2023,same_year,2023,0,0.5439,0.3683,68.4,innovation_technology,people_talent,innovation_technology,0.3041,integrity_ethics,-0.1558
+IBM,IBM,Technology,2024,same_year,2024,0,0.7125,0.6546,82.7,innovation_technology,sustainability_environment,innovation_technology,0.2046,integrity_ethics,-0.1541
+INTC,Intel,Technology,2016,same_year,2016,0,0.6093,-0.024,48.8,innovation_technology,diversity_inclusion,customer_focus,0.1678,integrity_ethics,-0.1623
+INTC,Intel,Technology,2017,same_year,2017,0,0.8621,-0.0474,47.6,innovation_technology,diversity_inclusion,customer_focus,0.0969,quality_excellence,-0.1024
+INTC,Intel,Technology,2018,same_year,2018,0,0.8574,0.3716,68.6,innovation_technology,diversity_inclusion,innovation_technology,0.1341,financial_growth_shareholder,-0.1008
+INTC,Intel,Technology,2019,same_year,2019,0,0.8857,0.4511,72.6,innovation_technology,diversity_inclusion,innovation_technology,0.1231,financial_growth_shareholder,-0.0921
+INTC,Intel,Technology,2020,same_year,2020,0,0.7253,0.2984,64.9,innovation_technology,diversity_inclusion,customer_focus,0.1133,diversity_inclusion,-0.1442
+INTC,Intel,Technology,2021,same_year,2021,0,0.7291,0.3536,67.7,innovation_technology,diversity_inclusion,customer_focus,0.1337,diversity_inclusion,-0.1632
+INTC,Intel,Technology,2022,same_year,2022,0,0.7343,0.4134,70.7,innovation_technology,diversity_inclusion,customer_focus,0.1357,diversity_inclusion,-0.1521
+INTC,Intel,Technology,2023,same_year,2023,0,0.7106,-0.1138,44.3,innovation_technology,diversity_inclusion,customer_focus,0.1072,diversity_inclusion,-0.2162
+INTC,Intel,Technology,2024,same_year,2024,0,0.754,0.528,76.4,innovation_technology,people_talent,customer_focus,0.1107,diversity_inclusion,-0.1685
+META,Meta Platforms,Technology,2016,same_year,2016,0,0.3794,0.2346,61.7,people_talent,integrity_ethics,community_social_impact,0.4278,integrity_ethics,-0.2546
+META,Meta Platforms,Technology,2017,same_year,2017,0,0.0319,-0.0557,47.2,customer_focus,integrity_ethics,customer_focus,0.9842,integrity_ethics,-0.3877
+META,Meta Platforms,Technology,2018,carried_forward,2017,1,0.05,-0.0284,48.6,customer_focus,integrity_ethics,customer_focus,0.9764,integrity_ethics,-0.3732
+META,Meta Platforms,Technology,2019,same_year,2019,0,0.3164,0.0329,51.6,people_talent,integrity_ethics,community_social_impact,0.4234,integrity_ethics,-0.3043
+META,Meta Platforms,Technology,2020,carried_forward,2019,1,0.3819,0.1308,56.5,people_talent,diversity_inclusion,community_social_impact,0.4315,diversity_inclusion,-0.2645
+META,Meta Platforms,Technology,2021,carried_forward,2019,2,0.3719,-0.0443,47.8,people_talent,diversity_inclusion,community_social_impact,0.4293,diversity_inclusion,-0.1897
+META,Meta Platforms,Technology,2022,carried_forward,2019,3,0.3725,-0.0006,50.0,people_talent,integrity_ethics,community_social_impact,0.4094,integrity_ethics,-0.192
+META,Meta Platforms,Technology,2023,carried_forward,2019,4,0.3426,-0.0208,49.0,people_talent,integrity_ethics,community_social_impact,0.4386,integrity_ethics,-0.2065
+META,Meta Platforms,Technology,2024,carried_forward,2019,5,0.3056,-0.2468,37.7,people_talent,financial_growth_shareholder,community_social_impact,0.4561,financial_growth_shareholder,-0.1956
+MSFT,Microsoft,Technology,2016,same_year,2016,0,0.3011,-0.0496,47.5,innovation_technology,financial_growth_shareholder,sustainability_environment,0.1958,financial_growth_shareholder,-0.3252
+MSFT,Microsoft,Technology,2017,same_year,2017,0,0.1983,-0.1836,40.8,innovation_technology,financial_growth_shareholder,innovation_technology,0.2366,financial_growth_shareholder,-0.2842
+MSFT,Microsoft,Technology,2018,same_year,2018,0,0.5624,-0.1841,40.8,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.1708,financial_growth_shareholder,-0.2323
+MSFT,Microsoft,Technology,2019,same_year,2019,0,0.615,-0.0169,49.2,innovation_technology,financial_growth_shareholder,community_social_impact,0.1592,financial_growth_shareholder,-0.2036
+MSFT,Microsoft,Technology,2020,same_year,2020,0,0.2979,0.1365,56.8,innovation_technology,financial_growth_shareholder,community_social_impact,0.2239,financial_growth_shareholder,-0.2117
+MSFT,Microsoft,Technology,2021,same_year,2021,0,0.5012,0.0481,52.4,sustainability_environment,people_talent,sustainability_environment,0.2437,financial_growth_shareholder,-0.1792
+MSFT,Microsoft,Technology,2022,same_year,2022,0,0.5773,0.1235,56.2,sustainability_environment,financial_growth_shareholder,sustainability_environment,0.2025,financial_growth_shareholder,-0.1708
+MSFT,Microsoft,Technology,2023,same_year,2023,0,0.5785,0.0269,51.3,sustainability_environment,integrity_ethics,sustainability_environment,0.2127,financial_growth_shareholder,-0.1749
+MSFT,Microsoft,Technology,2024,same_year,2024,0,0.6278,0.0903,54.5,sustainability_environment,innovation_technology,sustainability_environment,0.2134,financial_growth_shareholder,-0.171
+NVDA,NVIDIA,Technology,2018,same_year,2018,0,0.143,-0.0922,45.4,innovation_technology,people_talent,innovation_technology,0.9351,people_talent,-0.3216
+NVDA,NVIDIA,Technology,2019,same_year,2019,0,0.2163,0.099,54.9,innovation_technology,diversity_inclusion,innovation_technology,0.9032,diversity_inclusion,-0.3063
+NVDA,NVIDIA,Technology,2020,same_year,2020,0,0.1414,-0.1196,44.0,innovation_technology,people_talent,innovation_technology,0.9368,people_talent,-0.3226
+NVDA,NVIDIA,Technology,2021,same_year,2021,0,0.4085,0.4855,74.3,innovation_technology,diversity_inclusion,innovation_technology,0.8349,diversity_inclusion,-0.236
+NVDA,NVIDIA,Technology,2023,same_year,2023,0,0.3618,0.3327,66.6,innovation_technology,diversity_inclusion,innovation_technology,0.8509,diversity_inclusion,-0.2578
+NVDA,NVIDIA,Technology,2024,same_year,2024,0,0.3411,0.331,66.5,innovation_technology,diversity_inclusion,innovation_technology,0.8654,diversity_inclusion,-0.2454
+ORCL,Oracle,Technology,2018,same_year,2018,0,0.3087,0.0626,53.1,customer_focus,diversity_inclusion,customer_focus,0.3158,diversity_inclusion,-0.3359
+ORCL,Oracle,Technology,2019,same_year,2019,0,0.3357,0.0843,54.2,innovation_technology,diversity_inclusion,innovation_technology,0.3339,diversity_inclusion,-0.3163
+ORCL,Oracle,Technology,2020,same_year,2020,0,0.2768,0.0705,53.5,innovation_technology,diversity_inclusion,innovation_technology,0.5013,diversity_inclusion,-0.3536
+ORCL,Oracle,Technology,2021,same_year,2021,0,0.6291,0.5522,77.6,innovation_technology,diversity_inclusion,innovation_technology,0.418,integrity_ethics,-0.1699
+ORCL,Oracle,Technology,2022,same_year,2022,0,0.7229,0.8027,90.1,innovation_technology,diversity_inclusion,community_social_impact,0.1239,integrity_ethics,-0.1366
+ORCL,Oracle,Technology,2023,same_year,2023,0,0.2801,0.0993,55.0,innovation_technology,diversity_inclusion,innovation_technology,0.4785,diversity_inclusion,-0.3529
+ORCL,Oracle,Technology,2024,same_year,2024,0,0.3334,0.1311,56.6,innovation_technology,diversity_inclusion,innovation_technology,0.4683,diversity_inclusion,-0.2546

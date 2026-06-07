@@ -47,8 +47,19 @@ with `--model` or the env var).
   usable, 73%); `SUMMARY.md` written. Adds `--cdx-timeout` + `merge.py` for re-runs.
 - ✅ Part 2 — lived values: **proxy statements (DEF 14A) via SEC EDGAR** (`edgar.py`
   resolve/download + `extract_filing.py`; `lexicons.py` + `mine.py` for emphasis
-  vector, LM tone, Flesch, YoY cosine shift, dedup guard, optional LLM). Run on all
-  50 (442/450 usable, 98%); `SUMMARY.md` written. (Chosen over voluntary
-  ESG/sustainability reports for coverage and sourcing reliability.)
-- ▶️ Next: Part 3 authenticity index (Part 1 stated themes vs Part 2 emphasis
-  vectors on the shared 10-category space); Part 4.
+  vector, LM tone, Flesch, YoY cosine shift, dedup guard, + LLM commitment layer
+  `concreteness`/`forward_orientation`). Run on all 50 (442/450 usable, 98%); the
+  LLM layer ran on all 442 usable filings (0 errors, cached). `analysis.py`
+  regenerates the brief's three required analyses reproducibly (within-firm
+  over-time, cross-sector fingerprint, paired external-event tests → 4
+  `analysis_*.csv`; climate shift robust at t≈8.8, DEI/COVID windows honest nulls).
+  `SUMMARY.md` written. (Chosen over voluntary ESG/sustainability reports for
+  coverage and sourcing reliability.)
+- ✅ Part 3 — authenticity index: `build_index.py` (harmonize Part 1 theme dicts +
+  Part 2 emphasis to 10-dim distributions; say↔do **peer-relative/centered cosine**
+  as the primary alignment measure, raw cosine for contrast; same-year match +
+  flagged carry-forward; company-year + company-level outputs) + `report_index.py`
+  (distribution, 3 validity checks, plots). 375 company-years / 48 firms (AAPL,
+  BRK.B unscored — Part 1 too thin). Alignment rises 2016→2024; Tech highest,
+  Healthcare lowest; UNH lowest firm (face-valid). `README.md` + `SUMMARY.md` written.
+- ▶️ Next: Part 4 (one exploratory analysis on the measure / underlying data).

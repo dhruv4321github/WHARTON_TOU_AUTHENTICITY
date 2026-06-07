@@ -19,11 +19,15 @@ part2_lived_values/         # Part 2 — what firms DISCLOSE (proxy statements v
   edgar.py                  #   SEC EDGAR DEF 14A resolver + download (cached)
   extract_filing.py         #   filing HTML/txt → clean text
   lexicons.py               #   category lexicons (= Part 1 taxonomy) + LM tone loader
-  mine.py                   #   classical metrics (+ optional LLM) → structured dataset
+  mine.py                   #   classical metrics (+ LLM layer) → structured dataset
+  analysis.py               #   over-time / cross-sector / external-event tables
   README.md
 common/
   llm.py                    # shared, provider-swappable LLM client (OpenAI)
-part3_authenticity_index/   # [next] say-vs-do alignment measure
+part3_authenticity_index/   # Part 3 — say-vs-do alignment measure
+  build_index.py            #   harmonize Part1/Part2 → say↔do alignment (raw + centered)
+  report_index.py           #   distribution + validity checks + plots
+  README.md
 part4_proposal/             # [next] an exploratory analysis of our own
 config/
   companies.py              # the 50-company sample + value-page seeds (shared)
@@ -38,11 +42,16 @@ requirements.txt
 - **Part 2 — Lived values.** Text mining of **proxy statements (DEF 14A) via SEC
   EDGAR** — the firm's own mandatory disclosure of governance, pay, board
   diversity, and human-capital/ESG oversight. ✅ run for all 50 (442/450 usable, 98%);
-  emphasis vector shares Part 1's taxonomy; `SUMMARY.md` written. (Chosen over
-  voluntary ESG/sustainability reports for coverage and sourcing reliability.)
-- **Part 3 — Authenticity index.** An explicit, transparent operationalization
-  of *alignment* between Part 1 and Part 2, varying across firms and over time,
-  with distributional summary + a validity check.
+  emphasis vector shares Part 1's taxonomy; LLM commitment layer
+  (`concreteness`/`forward_orientation`) run on all 442 usable filings; `SUMMARY.md`
+  written. (Chosen over voluntary ESG/sustainability reports for coverage and
+  sourcing reliability.)
+- **Part 3 — Authenticity index.** ✅ An explicit operationalization of *alignment*
+  between Part 1 and Part 2 on the shared 10-category space: a **peer-relative
+  (centered) cosine** between each firm's stated theme profile and its disclosed
+  emphasis profile, scored per company-year (375 years / 48 firms) and per firm.
+  Varies across firms and over time (alignment rises 2016→2024; Tech highest,
+  Healthcare lowest), with distributional summary + 3 validity checks; `SUMMARY.md` done.
 - **Part 4 — Proposal.** One genuinely interesting follow-on analysis, implemented
   at least preliminarily.
 
@@ -55,7 +64,9 @@ Where the brief is deliberately ambiguous — value taxonomy, the meaning of
 decision, in code comments and per-part READMEs.
 
 ## Status
-Parts 1 and 2 collected end-to-end on the full 50-company sample: Part 1 from the
-Wayback Machine (328/450 usable, LLM-themed, summary written), Part 2 from SEC
-EDGAR proxy statements (442/450 usable, 98%). Remaining: Part 2 written summary,
-Part 3 (authenticity index), Part 4 (proposal).
+Parts 1–3 are complete end-to-end on the full 50-company sample, each with code +
+per-part README + output data + written summary: Part 1 from the Wayback Machine
+(328/450 usable, LLM-themed), Part 2 from SEC EDGAR proxy statements (442/450
+usable, 98%, classical metrics + LLM commitment layer), Part 3 the authenticity
+index (375 company-years / 48 firms, peer-relative say↔do alignment, 3 validity
+checks). Remaining: Part 4 (proposal).

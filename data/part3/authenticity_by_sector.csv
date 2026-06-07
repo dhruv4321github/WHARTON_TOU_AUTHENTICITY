@@ -1,0 +1,6 @@
+sector,count,mean,std,min,max
+Technology,68,0.165,0.225,-0.247,0.803
+Consumer Discretionary,79,0.116,0.333,-0.559,0.692
+Energy,70,0.112,0.347,-0.677,0.695
+Financials,73,-0.001,0.37,-0.794,0.787
+Healthcare,85,-0.031,0.297,-0.58,0.63

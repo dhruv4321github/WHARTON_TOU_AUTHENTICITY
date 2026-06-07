@@ -1,0 +1,6 @@
+sector,emphasis_innovation_technology,emphasis_customer_focus,emphasis_integrity_ethics,emphasis_people_talent,emphasis_diversity_inclusion,emphasis_sustainability_environment,emphasis_community_social_impact,emphasis_financial_growth_shareholder,emphasis_quality_excellence,emphasis_global_scale_reach,net_tone,lm_uncertainty,flesch,llm_concreteness,llm_forward_orientation,n_firms,top_theme
+Consumer Discretionary,0.0777,0.0327,0.15,0.1312,0.1604,0.055,0.0242,0.2691,0.0464,0.0534,0.2468,0.0051,27.4807,0.7216,0.7602,10,financial_growth_shareholder
+Energy,0.067,0.0094,0.1425,0.1969,0.1367,0.1274,0.0204,0.1724,0.0743,0.053,0.3287,0.0046,26.1955,0.6674,0.7101,10,people_talent
+Financials,0.0614,0.0562,0.1738,0.1603,0.1631,0.0625,0.0297,0.1932,0.0409,0.0589,-0.2012,0.0068,26.5333,0.6844,0.7678,10,financial_growth_shareholder
+Healthcare,0.0984,0.0166,0.1611,0.1597,0.143,0.0367,0.0262,0.2539,0.0586,0.0457,0.3873,0.0042,27.0067,0.7033,0.7656,10,financial_growth_shareholder
+Technology,0.1118,0.022,0.1763,0.1813,0.2207,0.0442,0.0245,0.1241,0.0466,0.0483,0.322,0.0052,28.0471,0.6835,0.7376,10,diversity_inclusion

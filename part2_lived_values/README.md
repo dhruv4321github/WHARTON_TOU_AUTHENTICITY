@@ -20,11 +20,18 @@ config/companies.py
 edgar.py          # resolve one DEF 14A per company-year + download (cached)
 extract_filing.py # filing HTML/txt → clean body text
 lexicons.py       # 10 category seed lexicons (= Part 1 taxonomy) + LM tone loader
-mine.py           # classical metrics (+ optional LLM layer) → structured dataset
+mine.py           # classical metrics (+ LLM layer) → structured dataset
         │
         ▼
 data/part2/part2_lived_values.csv   (one row per company-year)
 data/part2/part2_coverage_report.csv
+        │
+        ▼
+analysis.py       # reproducible over-time / cross-sector / external-event tables
+        │
+        ▼
+data/part2/analysis_within_company.csv      analysis_sector_fingerprint.csv
+data/part2/analysis_sector_year.csv         analysis_events.csv
 ```
 
 ## Run it
@@ -35,9 +42,12 @@ pip install -r requirements.txt
 # SEC etiquette REQUIRES a descriptive User-Agent with a real contact email.
 PYTHONPATH=. python -m part2_lived_values.mine --out-dir data/part2 \
     --user-agent "Your Name research (you@example.com)"
-# Add the real Loughran-McDonald tone dictionary and/or the optional LLM layer:
+# Add the real Loughran-McDonald tone dictionary and/or the LLM layer:
 PYTHONPATH=. python -m part2_lived_values.mine \
     --lm-dict path/to/LoughranMcDonald_MasterDictionary.csv --use-llm
+# Then regenerate the over-time / cross-sector / external-event analysis tables
+# (pure pandas, no network/API cost; --plots also writes two PNG trend charts):
+PYTHONPATH=. python -m part2_lived_values.analysis --plots
 ```
 
 ---
@@ -119,17 +129,21 @@ transparent, which matters for a measure that feeds an authenticity index:
 - *Within-company change*: cosine distance between consecutive years' emphasis
   vectors (0 = identical mix, 1 = orthogonal) + % change in length.
 
-**LLM layer (optional, `--use-llm`).** On the filing's front matter (proxy
-summary / letter), codes `concreteness` (vague aspiration ↔ quantified, time-bound
-commitments) and `forward_orientation` (past achievements ↔ future targets) — an
-authenticity-relevant rhetorical signal. Kept off the critical path and cached.
+**LLM layer (`--use-llm`) — run for the full sample.** On the filing's front
+matter (notice / board-chair or CEO letter / proxy summary, first ~8k chars), it
+codes `concreteness` (vague aspiration ↔ quantified, time-bound commitments) and
+`forward_orientation` (past achievements ↔ future targets) — an
+authenticity-relevant rhetorical signal that gives Part 3 a *second* dimension
+(rhetorical substance) on top of topic alignment. The prompt is adapted to proxy
+front matter (not a generic ESG letter). We ran it across all **442/442 usable
+filings (0 errors)**; results sit in the `llm_*` columns and every call is cached
+on disk, so it stays off the classical critical path and re-runs are free.
+Distributions are sane: `concreteness` mean ≈ 0.69, `forward_orientation` mean
+≈ 0.75 — proxies are moderately concrete and strongly forward-looking, exactly as
+the genre predicts.
 
-**Cross-sector & external-event analysis** (in the written summary, computed from
-this dataset): emphasis vectors aggregated by sector and year reveal, e.g.,
-whether Energy firms' `sustainability_environment` share rises around the 2015
-Paris Agreement / 2021 net-zero wave, or whether `diversity_inclusion` share
-jumps across sectors in 2020–2021. The dataset is built to support exactly these
-groupby-year/sector comparisons.
+**The three analyses the brief asks for are *computed*, not just narrated** — see
+the Analysis layer below.
 
 ## Output schema (`part2_lived_values.csv`) — every column + reasoning
 
@@ -149,6 +163,41 @@ groupby-year/sector comparisons.
 | `llm_concreteness`, `llm_forward_orientation`, `llm_note` | optional commitment framing |
 | `duplicate_of_year` | if this year's filing is byte-identical to an earlier year's, the year it duplicates (else blank) |
 | `coverage_status` | `ok` / `not_found` / `download_failed` / `scanned_or_empty` / `extract_failed` / `duplicate_of_prior` |
+
+## Analysis layer (`analysis.py`) — the brief's three required analyses, reproducibly
+The brief asks us to *apply text mining to analyze* (1) over-time change within
+firms, (2) cross-company/-sector variation, and (3) shifts coinciding with external
+events. `mine.py` bakes the within-firm year-over-year signal into the dataset
+(`emphasis_shift_cosine`, `word_count_delta_pct`); `analysis.py` regenerates the
+rest from the committed CSV in one command — so every number in `SUMMARY.md` is
+auditable, not hand-computed. It is pure pandas/numpy (no network, no API cost, no
+scipy); `--plots` additionally writes two trend charts
+(`fig_sustainability_by_sector.png`, `fig_diversity_over_time.png`; y-axes
+baselined at 0 so a near-flat series isn't visually exaggerated).
+
+| output | what it answers |
+|---|---|
+| `analysis_within_company.csv` | (1) per firm: mean YoY topic churn, **net start→end drift** (cosine), tone/readability trend, and the single biggest rising/falling theme. Sorted by drift, so the biggest movers (e.g. Valero, Tesla, BlackRock) surface first. |
+| `analysis_sector_fingerprint.csv` | (2) each sector's mean 10-theme emphasis + tone + LLM framing — its "fingerprint" (e.g. Tech proxies top out on `diversity_inclusion` ~0.22; Financials are the only net-negative-tone sector). |
+| `analysis_sector_year.csv` | (2)+(3) full sector × year emphasis trend table (backbone for the event windows). |
+| `analysis_events.csv` | (3) for each event, a **paired pre→post test** across firms present in both windows. |
+
+**External-event method (transparent, not a fishing trip).** Each event is a
+*pre-registered hypothesis* — it names the theme it should move and the window it
+should move in (`EVENTS` in `analysis.py`, with rationale at the point of decision).
+Windows are on filing year with a one-year buffer around the event (proxies are
+filed early, for the prior year). For firms present in **both** windows we report a
+paired pre/post comparison: levels, % change, a hand-computed paired **t-stat**
+(no scipy), and a nonparametric **`frac_increased`** (share of firms moving up) so a
+shift can be judged without overclaiming significance on ~50 firms.
+
+What it finds, bluntly: **only the climate/net-zero window is robust** —
+`sustainability_environment` ~doubles (all firms 0.041→0.098, **98% of firms up,
+t≈8.8**; Energy 0.081→0.190, **100% up, t≈5.6**). The 2020 **DEI/human-capital**
+and **COVID** windows are *not* sustained level shifts (≈+2%, t<1, ~half of firms
+up) — diversity language shows only a small, transient 2021 peak, not a durable
+re-leveling. Reporting the null results alongside the strong one is the honest
+scientific outcome.
 
 ## Known limitations
 1. **Document-type bias.** Proxies are governance/compensation-weighted, so they

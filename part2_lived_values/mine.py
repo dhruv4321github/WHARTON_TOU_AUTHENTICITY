@@ -120,8 +120,9 @@ def cosine_distance(a: dict[str, float], b: dict[str, float]) -> float | None:
 
 # --------------------------- optional LLM layer -----------------------------
 _LLM_SYSTEM = (
-    "You are coding the framing of a corporate sustainability/ESG report from its "
-    "front matter (CEO letter / executive summary). Return ONLY JSON:\n"
+    "You are coding the framing of a corporate proxy statement (SEC form DEF 14A) "
+    "from its front matter (notice of meeting / board-chair or CEO letter / proxy "
+    "summary). Return ONLY JSON:\n"
     '{"concreteness": <0..1>, "forward_orientation": <0..1>, "note": "<one sentence>"}\n'
     "concreteness: 0 = vague aspiration, 1 = specific, quantified, time-bound "
     "commitments. forward_orientation: 0 = mostly past achievements, 1 = mostly "
