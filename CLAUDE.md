@@ -62,4 +62,14 @@ with `--model` or the env var).
   (distribution, 3 validity checks, plots). 375 company-years / 48 firms (AAPL,
   BRK.B unscored — Part 1 too thin). Alignment rises 2016→2024; Tech highest,
   Healthcare lowest; UNH lowest firm (face-valid). `README.md` + `SUMMARY.md` written.
-- ▶️ Next: Part 4 (one exploratory analysis on the measure / underlying data).
+- ✅ Part 4 — exploratory proposal: `convergence.py` interrogates Part 3's own headline
+  (alignment ↑ 2016→2024) as possible **institutional herding**. Measures cross-firm
+  profile **dispersion** per year (mean L2 to centroid = the magnitude of the deviation
+  vectors Part 3's centered cosine runs on). Findings: disclosures converged robustly
+  (slope −0.0036/yr, t≈−6.3) so the *raw* alignment rise (0.40→0.54) is partly mechanical,
+  but the *peer-relative* measure (−0.02→0.20) survives the correction → vindicates the
+  centering choice (caveat: late-window centered scores rest on a fainter signal). Twist:
+  convergence is led by financial + people_talent (the latter coincides w/ SEC 2020
+  human-capital rule), while **sustainability *diverged*** (cross-firm SD +59% disclosed /
+  +30% stated) — a fault line, not a bandwagon. `README.md` + `SUMMARY.md` written.
+- ✅ **All four parts complete.** Each ships code + per-part README + output data + summary.
