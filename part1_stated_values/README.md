@@ -197,12 +197,72 @@ throttled bulk run produces, without re-running all 500).
 Fills `theme_categories` and `analyst_notes` via an LLM (OpenAI by default,
 through a swappable `LLMClient`).
 
-- **Value taxonomy** (10 sector-neutral categories; see the `analyze.py`
-  docstring) is the central judgment call. It is deliberately designed to map
-  onto ESG + business-performance dimensions so Part 3 can measure say-vs-do
-  alignment on a common footing.
+### The value taxonomy (the central judgment call) — and why these 10
+
+The brief explicitly leaves the categories to us ("you define the categories —
+justify them"). We use **10 sector-neutral value categories**. The full
+definitions live in the `TAXONOMY` dict in `analyze.py`; here is the list and the
+reasoning behind it.
+
+| Category | What it captures |
+|---|---|
+| `innovation_technology` | R&D, invention, technological leadership, being cutting-edge/disruptive |
+| `customer_focus` | Serving, delighting, or being obsessed with customers; service quality |
+| `integrity_ethics` | Honesty, ethics, trust, transparency, accountability, governance |
+| `people_talent` | Employees, talent, development, wellbeing, culture, being a great workplace |
+| `diversity_inclusion` | Diversity, equity, inclusion, belonging, representation |
+| `sustainability_environment` | Climate, emissions, energy transition, environmental stewardship, net-zero |
+| `community_social_impact` | Communities, philanthropy, social responsibility, broadening access |
+| `financial_growth_shareholder` | Growth, profitability, shareholder value, returns, scale as a goal |
+| `quality_excellence` | Quality, operational excellence, reliability, craftsmanship, safety |
+| `global_scale_reach` | Global presence/reach; serving the world; the scale of operations |
+
+Three design principles drove the choice:
+
+1. **Sector-neutral, so cross-sector comparison is meaningful.** The same 10
+   buckets must fit a bank, an oil major, and a hospital — otherwise the brief's
+   five-sector comparison is impossible. We deliberately avoided industry-specific
+   labels (no "drug pipeline," no "loan growth"); every category is phrased so any
+   of the 50 firms could plausibly express it.
+2. **They bridge to Part 2 — this is the load-bearing reason.** The categories are
+   chosen to map onto the **ESG + business-performance** dimensions that Part 2
+   measures in the proxy statements, so Part 3 can compute say-vs-do *alignment* on
+   a single common footing instead of comparing two incommensurable vocabularies.
+   The taxonomy is, in effect, the shared language that makes Part 3 possible — it
+   was reverse-engineered from what the alignment measure needs. The explicit
+   mapping (also in `analyze.py`):
+   - **Environmental** → `sustainability_environment`
+   - **Social** → `people_talent`, `diversity_inclusion`, `community_social_impact`,
+     `customer_focus`
+   - **Governance** → `integrity_ethics`
+   - **Business/Performance** → `innovation_technology`,
+     `financial_growth_shareholder`, `quality_excellence`, `global_scale_reach`
+3. **Multi-label, not one forced label.** A real values page is usually about
+   several things at once (Nike: innovation *and* community *and* sustainability),
+   so each category gets a **0–1 salience score** and a page can light up several.
+   This reflects how mission text actually reads and gives Part 3 a 10-number
+   *profile* per company-year rather than a single crude tag.
+
+**Why 10** is a deliberate middle ground: few enough to stay interpretable and to
+score reliably, many enough to keep genuinely distinct values apart (firms
+emphasize `people_talent` and `diversity_inclusion` very differently, so they must
+not be merged). The scheme is **versioned** (`TAXONOMY_VERSION`) and that version
+is part of the LLM cache key, so changing the categories invalidates every stale
+coding rather than silently mixing schemes.
+
+**Honest limitation of the taxonomy.** It is a *defensible* lens, not the only
+one. Being sector-neutral is a strength for comparison but a mild cost in nuance
+(it can't separate, say, "patient safety" from generic `quality_excellence`). And
+the top-down, ESG-aligned framing is itself a choice: one could instead build the
+categories *inductively* (let topics emerge from the text). We chose the top-down,
+Part-2-bridged scheme precisely because Parts 2–3 need a fixed shared space — a
+stated trade-off, not a free lunch.
+
+### Scoring and cost discipline
 - **Theme scoring** is multi-label with 0–1 salience per category, not a single
-  forced label.
+  forced label. The model's output is filtered to the fixed 10 keys with scores
+  clamped to 0–1 (`_clean_themes`), so it cannot invent a category or an
+  out-of-range score.
 - **Cost discipline:** the model is only called for `ok` rows; identical-text
   years reuse the prior coding with no call; shift notes are only generated when
   the deterministic detector flagged a change; all calls are cached on disk.

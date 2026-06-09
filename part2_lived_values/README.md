@@ -200,19 +200,40 @@ re-leveling. Reporting the null results alongside the strong one is the honest
 scientific outcome.
 
 ## Known limitations
-1. **Document-type bias.** Proxies are governance/compensation-weighted, so they
-   *under-represent environmental language* vs. a sustainability report — a high
-   `financial_growth_shareholder` / `integrity_ethics` share is partly the genre,
-   not just the firm. Cross-firm/-year comparisons (same genre throughout) are
-   sound; cross-*document-type* level comparisons against Part 1 must account for
-   this (Part 3 compares *relative* profiles, not raw levels).
+1. **Document-type bias — the proxy has its own built-in "accent."** A proxy
+   statement's legal job is governance, board elections, and executive pay, so
+   *every* firm's proxy automatically sounds money- and ethics/governance-heavy and
+   light on the environment — that tilt comes from the *document type*, not from the
+   specific company. (Had we picked a sustainability report, the tilt would flip the
+   other way.) So when a firm's proxy scores high on
+   `financial_growth_shareholder` / `integrity_ethics`, part of that is just "this is
+   a proxy," not "this firm uniquely prioritizes money and ethics." **What this does
+   and doesn't break:** comparing one firm's proxy to another's, or one year to the
+   next, is *fair* — every document is the same genre, so the bias is the same
+   constant for all and cancels out. What's *not* fair is directly comparing the
+   proxy's **raw** topic levels against Part 1's website pages, which are a different
+   genre that discusses the environment far more freely — the proxy will always look
+   lower on environment regardless of what the firm truly cares about. This is
+   exactly why **Part 3 compares each firm *relative to its peers* on the same side**
+   (which subtracts out the shared genre tilt) rather than comparing raw numbers.
 2. **Lexicon emphasis ≠ ground truth.** Seed lists are transparent but coarse;
-   they measure *vocabulary share*, not sincerity. They should be expanded/validated.
+   they measure *vocabulary share*, not sincerity, and should be expanded/validated
+   against real reports. (Why lexicon-counting here, instead of LLM topic-scoring as
+   in Part 1? Proxy statements run to tens of thousands of words — *far* longer than
+   Part 1's short "About Us" pages — so an LLM pass over every full filing would be
+   slow and costly, whereas word-counting is cheap, transparent, and scales to all
+   500 firms.)
 3. **A filing is the firm's own account**, not independent behavior — so Part 2 is
    "lived values *as disclosed*," a caveat that matters for interpreting the Part 3
    measure (addressed there as a threat to validity).
-4. **Tone uses the fallback dictionary unless `--lm-dict` is supplied** — net-tone
-   numbers are indicative until the real Loughran-McDonald Master Dictionary is passed.
+4. **Tone uses the fallback dictionary unless `--lm-dict` is supplied** — so the
+   *shipped* net-tone numbers are **indicative, not final** (the committed run used
+   the small built-in fallback list). We didn't bundle the real Loughran-McDonald
+   Master Dictionary because it's a large external file behind a registration page
+   (not ours to redistribute), so tone is an **optional, one-flag** layer: a natural
+   next step is to download the genuine dictionary, re-run with
+   `--lm-dict path/to/LM.csv`, and regenerate real tone numbers. This affects only
+   the tone columns — the topic-emphasis vectors that feed Part 3 don't depend on it.
 5. **Front-matter-only LLM coding** may miss commitments buried deep in long filings.
 
 ## Scaling
