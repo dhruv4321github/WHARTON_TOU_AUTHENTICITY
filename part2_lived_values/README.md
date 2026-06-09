@@ -229,11 +229,11 @@ scientific outcome.
 4. **Tone uses the fallback dictionary unless `--lm-dict` is supplied** — so the
    *shipped* net-tone numbers are **indicative, not final** (the committed run used
    the small built-in fallback list). We didn't bundle the real Loughran-McDonald
-   Master Dictionary because it's a large external file behind a registration page
-   (not ours to redistribute), so tone is an **optional, one-flag** layer: a natural
-   next step is to download the genuine dictionary, re-run with
-   `--lm-dict path/to/LM.csv`, and regenerate real tone numbers. This affects only
-   the tone columns — the topic-emphasis vectors that feed Part 3 don't depend on it.
+   Master Dictionary because it's a large external file, so tone is an
+   **optional, one-flag** layer: a natural next step is to download the genuine
+   dictionary, re-run with `--lm-dict path/to/LM.csv`, and regenerate real tone
+   numbers. This affects only the tone columns — the topic-emphasis vectors that feed
+   Part 3 don't depend on it.
 5. **Front-matter-only LLM coding** may miss commitments buried deep in long filings.
 
 ## Scaling
