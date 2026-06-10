@@ -2,9 +2,9 @@
 Shared LLM client abstraction.
 
 A single thin seam between our analysis code and whichever provider/model is in
-use. Both Part 1 (theme tagging) and Part 2 (tone/commitment coding) talk to the
-model only through `LLMClient`, so changing provider or model is a one-class edit
-that never touches analysis logic.
+use. Both Part 1 (theme tagging) and Part 2 (commitment coding —
+concreteness/forward-orientation) talk to the model only through `LLMClient`, so
+changing provider or model is a one-class edit that never touches analysis logic.
 
 Default provider: OpenAI. Reads OPENAI_API_KEY from the environment and the model
 from OPENAI_MODEL (fallback gpt-4o-mini). The import of `openai` is lazy so that
