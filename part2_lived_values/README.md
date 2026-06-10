@@ -236,6 +236,59 @@ scientific outcome.
    Part 3 don't depend on it.
 5. **Front-matter-only LLM coding** may miss commitments buried deep in long filings.
 
+## Assumptions
+These are the things we take on trust for the method to work — stated openly so a
+reader can challenge any of them:
+
+1. **A proxy statement is a fair stand-in for what a firm "actually values."** The
+   proxy (DEF 14A) is a legal document about board, pay, and governance, so *every*
+   firm's proxy automatically sounds money- and rules-heavy and barely mentions the
+   environment. We assume that built-in "accent" is the same for everyone, so when we
+   compare firm-to-firm, year-to-year, or in Part 3, the accent cancels out and what's
+   left is each firm's real differences. (Had we picked a sustainability report, the
+   accent would lean the opposite way — green and fluffy.) (limitation #1).
+2. **What a firm *talks about* in its filing reflects what it *prioritizes*.** A
+   filing is the company describing itself, not an outside auditor, so this is "values
+   as disclosed," not "as independently verified" — but we assume the topics it spends
+   words on still say something real about its priorities (limitation #3).
+3. **Counting topic words ≈ measuring how much a topic matters.** We measure emphasis
+   by counting words from each topic's word-list (e.g. "carbon," "emission,"
+   "renewable" → sustainability) and assume a topic's *share* of the vocabulary is a
+   decent proxy for the attention it gets — coarse, but transparent (limitation #2).
+4. **The same 10 topic buckets that fit websites also fit proxies.** We reuse Part 1's
+   ten categories here and assume they describe legal filings well enough too — which
+   has to hold for Part 3 to compare "say" (websites) against "do" (proxies) on one
+   ruler (inherited from Part 1).
+5. **The cheap backup tone word-list is OK as a rough signal.** For tone (positive vs
+   negative language) we used a small built-in fallback list, *not* the full
+   professional finance dictionary. We assume that's acceptable because tone is side
+   info — Part 3's score uses the *topic mix*, not the tone, so a rough tone number
+   doesn't corrupt the main result (limitation #4).
+6. **The opening of a filing represents its "substance."** The LLM "is the talk
+   concrete or vague?" scoring (`concreteness` / `forward_orientation`) reads only the
+   filing's front matter (~8,000 characters), and we assume that opening is
+   representative enough — flagged as a limit, since real commitments can sit deep in
+   the document (limitation #5).
+
+## What I'd do differently with more time
+- **Plug in the real finance tone dictionary.** Swap the small fallback word-list for
+  the genuine Loughran-McDonald Master Dictionary (a one-flag change, `--lm-dict`) and
+  re-run, so the tone numbers go from "indicative" to "final" (limitation #4).
+- **Check the topic word-lists against real, hand-labeled filings.** The lists are
+  currently hand-written (asserted); I'd have a human label a sample of filings by
+  topic and confirm the word-counts agree, turning "we think this measures emphasis"
+  into "we've checked it does" (limitation #2).
+- **Read the whole filing, not just the opening** — run the LLM over the full document,
+  or a smart hybrid (word-counts to *find* the right sections, LLM to *score* them), so
+  commitments buried deep aren't missed (limitation #5).
+- **Add a second kind of document to cross-check** (e.g. a sustainability report).
+  Because it has the *opposite* genre accent, comparing the two separates "this is just
+  how a proxy sounds" from "this firm genuinely cares about X" (limitation #1).
+- **Actually use the concreteness / forward-looking scores in the index.** Those two
+  LLM columns are computed but currently sit unused; I'd fold them into Part 3 so
+  authenticity means not just "the same topics match" but "*and* the talk is specific,
+  not vague promises" (the Part 3 future-work direction).
+
 ## Scaling
 Nothing is hard-coded to 50; downloads/LLM calls are cached, and `--limit` /
 `--only` support incremental runs. EDGAR is what makes ~500 companies × ~9 years

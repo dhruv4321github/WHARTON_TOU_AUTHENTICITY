@@ -182,6 +182,52 @@ Structural standouts in the low-coverage tail (all in `part1_coverage_report.csv
    A genuinely under-archived site (Thermo Fisher: gone from Wayback after 2017)
    stays a documented hole.
 
+## Assumptions
+These are the things we take on trust for the method to work — stated openly so a
+reader can challenge any of them:
+
+1. **The page archived in the most years is the company's real "values" page.** A
+   company doesn't have one official "About Us" link, so for each firm we try several
+   possible addresses and keep whichever one the Wayback Machine saved across the most
+   target years. We assume the most-archived page is the right one — and if we guessed
+   wrong, the firm falls back to its next-best page rather than vanishing (decision #1).
+2. **One page is enough to capture what a firm "says it values."** Big companies
+   spread mission language across many pages; we grab only one and assume it's a fair
+   stand-in. Imperfect, but it keeps all 50 firms on the same rule (limitation #2).
+3. **A mid-July snapshot represents the whole year.** When the archive saved a page
+   many times in a year we pick the one nearest July 1, assuming a values page barely
+   changes within a year so *which day* we grabbed it doesn't matter much (decision #2).
+4. **A page more than 5% different from last year's is a *real* change.** The computer
+   scores how similar this year's text is to last year's; we draw the line at 0.95.
+   Above it = trivial drift (a changed copyright year, a reworded button); below it =
+   they actually rewrote it. We assume that cutoff cleanly splits the two (decision #5).
+5. **The archived text equals what a visitor actually saw.** We pull the raw saved
+   page (the `…id_/…` capture) so the Wayback toolbar/menus don't leak into our text,
+   and assume that raw capture faithfully matches the live website back then.
+6. **Our 10 topic categories are a good enough shared language.** We assume these ten
+   sector-neutral buckets are broad enough to fit any firm in any industry *and* that
+   they match the buckets Part 2 uses — which is the whole reason Part 3 can compare
+   "say" against "do" on equal footing (justified under "The value taxonomy" below).
+
+## What I'd do differently with more time
+- **Hunt harder for better pages for the worst-covered firms.** Five companies (Apple,
+  Broadcom, American Express, UnitedHealth, Target) had only 2 of 9 years archived;
+  with more time I'd dig manually for a better-archived alternate page for each instead
+  of just flagging them as gaps.
+- **Grab several values pages per firm and combine them** (mission + leadership +
+  careers/values) for a fuller picture, directly fixing "one page ≠ all stated values"
+  (limitation #2).
+- **Grab several snapshots per year and keep the richest one**, instead of blindly
+  taking the July-1 capture — fewer near-empty (`thin_text`) pages and "wrong day"
+  misses (limitation #3).
+- **Use a backup archive when Wayback has nothing.** Some sites vanish from Wayback
+  (Thermo Fisher after 2017); a second archive like archive.today may have saved those
+  years, rescuing a documented gap.
+- **Let the categories emerge from the text itself.** Instead of deciding the 10
+  buckets up front (top-down), let a program discover the natural topics in the pages
+  (bottom-up) and check whether they roughly agree with our ten — strong reassurance
+  the hand-picked categories aren't biased (taxonomy limitation).
+
 ## How this scales (the brief's real ask)
 Nothing is hard-coded to 50. Replace the seed list with the full S&P 500, raise
 `--limit`, and the same code runs ~4,500 snapshots. The HTML cache + polite
